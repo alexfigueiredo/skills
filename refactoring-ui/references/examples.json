@@ -1,0 +1,4377 @@
+{
+  "schema_version": 1,
+  "source": {
+    "pages": 252,
+    "figure_count": 283,
+    "section_count": 50
+  },
+  "annotation_note": "Captions describe visually inspected figures and their surrounding section context. Groups preserve related views; a comparison figure contains multiple views within one image. Example screenshots demonstrate a specific principle, not complete implementation or accessibility conformance.",
+  "rules": [
+    {
+      "id": "start-with-a-feature-not-a-layout",
+      "topic": "starting-from-scratch",
+      "title": "Start with a feature, not a layout",
+      "page": 8,
+      "reference": "references/starting-from-scratch.md#start-with-a-feature-not-a-layout",
+      "when": "A new screen is stuck on navigation, page chrome or the app shell.",
+      "summary": "Design the smallest useful feature around its real data and actions before choosing the surrounding shell.",
+      "caution": "Reuse established navigation in an existing product; this advice targets an undecided new design.",
+      "tags": [
+        "new screen",
+        "blank canvas",
+        "feature",
+        "app shell",
+        "navigation",
+        "settings"
+      ],
+      "featured_figures": [
+        "fig-009-002",
+        "fig-010-003"
+      ],
+      "figures": [
+        {
+          "id": "fig-008-001",
+          "page": 8,
+          "path": "references/figures/fig-008-001.webp",
+          "width": 1440,
+          "height": 436,
+          "sha256": "6a605511b738dc59a8afd27cdefdee149fc94308b19eecc97ab1d0fcf9fbca79",
+          "role": "problem",
+          "group": "shell-first",
+          "caption": "Three competing page shells leave navigation and layout undecided before a feature exists."
+        },
+        {
+          "id": "fig-009-002",
+          "page": 9,
+          "path": "references/figures/fig-009-002.webp",
+          "width": 1440,
+          "height": 929,
+          "sha256": "b3592f1407f9ef5ddbbd0f8b0a09696f36a0cb4a720da589de74c146560b823c",
+          "role": "example",
+          "group": "flight-search",
+          "caption": "A flight-search form focuses on departure, destination, dates and the search action."
+        },
+        {
+          "id": "fig-010-003",
+          "page": 10,
+          "path": "references/figures/fig-010-003.webp",
+          "width": 1440,
+          "height": 929,
+          "sha256": "9ce6e08968e3e34d09296b3c1bbd1e24840646e47f494e0d25ee08f2bc34237f",
+          "role": "example",
+          "group": "flight-search",
+          "caption": "The flight-search feature gains typography, icons and a split background while remaining the focal point."
+        }
+      ]
+    },
+    {
+      "id": "detail-comes-later",
+      "topic": "starting-from-scratch",
+      "title": "Detail comes later",
+      "page": 12,
+      "reference": "references/starting-from-scratch.md#detail-comes-later",
+      "when": "Colors, fonts and shadows are slowing early layout decisions.",
+      "summary": "Explore structure in low fidelity or grayscale, then add detail once the hierarchy works.",
+      "caution": "Grayscale is a design exercise, not a demand to remove a product's established visual language.",
+      "tags": [
+        "wireframe",
+        "grayscale",
+        "prototype",
+        "early design",
+        "overdesign"
+      ],
+      "featured_figures": [
+        "fig-013-005",
+        "fig-013-006"
+      ],
+      "figures": [
+        {
+          "id": "fig-012-004",
+          "page": 12,
+          "path": "references/figures/fig-012-004.webp",
+          "width": 1440,
+          "height": 563,
+          "sha256": "aacb0d6a1057515affca23306cb65cabaa75ec98c831969417deefa3c8fff3bc",
+          "role": "example",
+          "group": "low-fidelity",
+          "caption": "A thick-marker sketch captures form and plan-card layout without detailed styling."
+        },
+        {
+          "id": "fig-013-005",
+          "page": 13,
+          "path": "references/figures/fig-013-005.webp",
+          "width": 1440,
+          "height": 740,
+          "sha256": "eebb818e4dc8e745631f5eb367c5ee603af5d90f8e1e7b49c2be7c11e7825d11",
+          "role": "before",
+          "group": "grayscale-first",
+          "caption": "A grayscale storage-plan checkout establishes hierarchy through spacing, weight and contrast."
+        },
+        {
+          "id": "fig-013-006",
+          "page": 13,
+          "path": "references/figures/fig-013-006.webp",
+          "width": 1440,
+          "height": 741,
+          "sha256": "d35bbfb1a78f0537d1fa5423c4c30a3716fc6e259b6c11feb8db9d1331501668",
+          "role": "after",
+          "group": "grayscale-first",
+          "caption": "Purple accents enhance the same checkout after its grayscale hierarchy is established."
+        }
+      ]
+    },
+    {
+      "id": "dont-design-too-much",
+      "topic": "starting-from-scratch",
+      "title": "Don’t design too much",
+      "page": 16,
+      "reference": "references/starting-from-scratch.md#dont-design-too-much",
+      "when": "Mockups imply features or edge cases that are outside the current delivery scope.",
+      "summary": "Design and implement one useful slice, learning from the working interface before expanding.",
+      "caution": "Keep required functionality and known constraints; simplify only genuinely optional scope.",
+      "tags": [
+        "scope",
+        "overdesign",
+        "mvp",
+        "attachments",
+        "iteration"
+      ],
+      "featured_figures": [
+        "fig-018-010",
+        "fig-019-011"
+      ],
+      "figures": [
+        {
+          "id": "fig-016-007",
+          "page": 16,
+          "path": "references/figures/fig-016-007.webp",
+          "width": 1440,
+          "height": 935,
+          "sha256": "991526dc3b2af0156599d96f7361b6279713869006ffef694cbbad6a2c3a8e7a",
+          "role": "problem",
+          "group": "scope",
+          "caption": "A collage of many application screens illustrates the complexity of designing everything at once."
+        },
+        {
+          "id": "fig-017-008",
+          "page": 17,
+          "path": "references/figures/fig-017-008.webp",
+          "width": 1440,
+          "height": 935,
+          "sha256": "31ab7a826d1e1be0adbfd42da41b7d89b56603980984e55f19ce908e242bdc4e",
+          "role": "example",
+          "group": "scope",
+          "caption": "One screen is isolated from the surrounding screens to focus work on the next feature."
+        },
+        {
+          "id": "fig-018-009",
+          "page": 18,
+          "path": "references/figures/fig-018-009.webp",
+          "width": 1440,
+          "height": 390,
+          "sha256": "e6e4a95cec0505135a6141aceeaabbfea3a96597be1c430251dab8e2d5d626a4",
+          "role": "diagram",
+          "group": "iteration",
+          "caption": "A circular Design and Code loop illustrates alternating design with implementation."
+        },
+        {
+          "id": "fig-018-010",
+          "page": 18,
+          "path": "references/figures/fig-018-010.webp",
+          "width": 1440,
+          "height": 609,
+          "sha256": "bd18026e3905b8921cd26f20ccbbb544e8be7bf44c333dca452e3d07a74b1d79",
+          "role": "before",
+          "group": "comment-scope",
+          "caption": "A comment form includes attachment controls that expand the implementation scope."
+        },
+        {
+          "id": "fig-019-011",
+          "page": 19,
+          "path": "references/figures/fig-019-011.webp",
+          "width": 1440,
+          "height": 549,
+          "sha256": "ac5578caa6eba596f4ab75413dffcedd9b2217cc4166bfe73764ce17d5f3e1b4",
+          "role": "after",
+          "group": "comment-scope",
+          "caption": "The comment form omits attachments and retains the message field and posting action."
+        }
+      ]
+    },
+    {
+      "id": "choose-a-personality",
+      "topic": "starting-from-scratch",
+      "title": "Choose a personality",
+      "page": 20,
+      "reference": "references/starting-from-scratch.md#choose-a-personality",
+      "when": "The interface feels generic or its typography, colors, corners and copy disagree.",
+      "summary": "Choose a coherent visual and verbal personality suited to the audience.",
+      "caution": "Preserve an existing brand; color associations and example fonts are possibilities, not universal meanings.",
+      "tags": [
+        "brand",
+        "personality",
+        "tone",
+        "formal",
+        "playful",
+        "radius",
+        "voice"
+      ],
+      "featured_figures": [
+        "fig-021-013",
+        "fig-021-014",
+        "fig-022-015"
+      ],
+      "figures": [
+        {
+          "id": "fig-020-012",
+          "page": 20,
+          "path": "references/figures/fig-020-012.webp",
+          "width": 1440,
+          "height": 1119,
+          "sha256": "6aee36f30469e0a140f19f959d21ab82d021725e6731d01dfa7f6a090ede80cb",
+          "role": "comparison",
+          "group": "brand-personality",
+          "caption": "Banking photography and a community illustration give two landing pages different personalities."
+        },
+        {
+          "id": "fig-021-013",
+          "page": 21,
+          "path": "references/figures/fig-021-013.webp",
+          "width": 1440,
+          "height": 632,
+          "sha256": "f79737001e5f902a41de65c837ebfb710981b4420505c69868902bd3ad1e54f7",
+          "role": "example",
+          "group": "type-personality",
+          "caption": "A bookkeeping hero uses a serif headline to convey a classic professional tone."
+        },
+        {
+          "id": "fig-021-014",
+          "page": 21,
+          "path": "references/figures/fig-021-014.webp",
+          "width": 1440,
+          "height": 631,
+          "sha256": "d9d077535c7785664f9eb755066316b4951f6906fbe54185703003dd299a2ae0",
+          "role": "example",
+          "group": "type-personality",
+          "caption": "An icon-library hero uses a rounded sans-serif and pill button for a playful tone."
+        },
+        {
+          "id": "fig-022-015",
+          "page": 22,
+          "path": "references/figures/fig-022-015.webp",
+          "width": 1440,
+          "height": 631,
+          "sha256": "a7e645dcea0cbed5d028b1bf4eff0f192b6f53526f79aa1cd8b73f5806233d44",
+          "role": "example",
+          "group": "type-personality",
+          "caption": "A workspace hero uses a neutral sans-serif over photography."
+        },
+        {
+          "id": "fig-022-016",
+          "page": 22,
+          "path": "references/figures/fig-022-016.webp",
+          "width": 1440,
+          "height": 631,
+          "sha256": "fe3ff29126ca1af59b445a84933141394e68cc8824521b121cf1f31d9b7a357a",
+          "role": "example",
+          "group": "color-personality",
+          "caption": "A chat-product hero uses blue accents on its action and chat preview."
+        },
+        {
+          "id": "fig-023-017",
+          "page": 23,
+          "path": "references/figures/fig-023-017.webp",
+          "width": 1440,
+          "height": 630,
+          "sha256": "be43439d526a849c74643295143b4280d521747f7a855d58214c6b9e5367d161",
+          "role": "example",
+          "group": "color-personality",
+          "caption": "A rooftop-lounge hero combines gold accents with monochrome city photography."
+        },
+        {
+          "id": "fig-023-018",
+          "page": 23,
+          "path": "references/figures/fig-023-018.webp",
+          "width": 1440,
+          "height": 630,
+          "sha256": "aef0424ca52da1e05093c39aecd9831c8932e5cdb993a5cf55af7f9a12054ca4",
+          "role": "example",
+          "group": "color-personality",
+          "caption": "A city-tour hero uses a pink action beside a bright illustrated skyline."
+        },
+        {
+          "id": "fig-024-019",
+          "page": 24,
+          "path": "references/figures/fig-024-019.webp",
+          "width": 1440,
+          "height": 631,
+          "sha256": "70d76c15b258d62156e602019bea5594712023fd46cff85dad8fa7faa32dec30",
+          "role": "example",
+          "group": "radius-personality",
+          "caption": "A meeting-room hero uses modestly rounded controls in a restrained layout."
+        },
+        {
+          "id": "fig-024-020",
+          "page": 24,
+          "path": "references/figures/fig-024-020.webp",
+          "width": 1440,
+          "height": 631,
+          "sha256": "fefffc7750f1dee63ce4b6e370a16a37e0e08f9a1d068479bab2c1c4ec3c0e0c",
+          "role": "example",
+          "group": "radius-personality",
+          "caption": "A startup-dashboard hero uses rounded cards and pill actions for a softer feel."
+        },
+        {
+          "id": "fig-025-021",
+          "page": 25,
+          "path": "references/figures/fig-025-021.webp",
+          "width": 1440,
+          "height": 574,
+          "sha256": "ced8a0599be0494505db03058348837e371e7e2d7e3ca617d5d2598a6a64cbda",
+          "role": "example",
+          "group": "radius-personality",
+          "caption": "An investment hero uses square action buttons and a rectangular photo for a formal feel."
+        },
+        {
+          "id": "fig-025-022",
+          "page": 25,
+          "path": "references/figures/fig-025-022.webp",
+          "width": 1440,
+          "height": 468,
+          "sha256": "abfdfc4bc97c0e4e95648f72bb2c9369781cbb5ad145bc2379517e8b3614115a",
+          "role": "example",
+          "group": "copy-personality",
+          "caption": "An identity-verification form addresses the user formally on a dark blue background."
+        },
+        {
+          "id": "fig-026-023",
+          "page": 26,
+          "path": "references/figures/fig-026-023.webp",
+          "width": 1440,
+          "height": 468,
+          "sha256": "90043b3fbbbcaae083bb2f5003122ce580ac6bc294ea820229bfe34d29506030",
+          "role": "example",
+          "group": "copy-personality",
+          "caption": "An identity-verification form uses conversational copy and pink accents for a friendly tone."
+        }
+      ]
+    },
+    {
+      "id": "limit-your-choices",
+      "topic": "starting-from-scratch",
+      "title": "Limit your choices",
+      "page": 28,
+      "reference": "references/starting-from-scratch.md#limit-your-choices",
+      "when": "Every component introduces another slightly different size, shade or shadow.",
+      "summary": "Constrain choices to a reusable scale and compare neighboring options in context.",
+      "caution": "Use the project's existing tokens before proposing new scales.",
+      "tags": [
+        "tokens",
+        "design system",
+        "inconsistent",
+        "choices",
+        "scale"
+      ],
+      "featured_figures": [
+        "fig-030-028",
+        "fig-031-029"
+      ],
+      "figures": [
+        {
+          "id": "fig-028-024",
+          "page": 28,
+          "path": "references/figures/fig-028-024.webp",
+          "width": 1440,
+          "height": 234,
+          "sha256": "5b1957d6e69f5ef2f5c10fd108954aba6f99b93b45d2476f213c2f1523868f2c",
+          "role": "problem",
+          "group": "choice-overload",
+          "caption": "Three nearly identical blue buttons illustrate unproductive decisions between arbitrary color values."
+        },
+        {
+          "id": "fig-029-025",
+          "page": 29,
+          "path": "references/figures/fig-029-025.webp",
+          "width": 1440,
+          "height": 235,
+          "sha256": "493511d9af5f704e1f3ddfa9fca07d4aea96764df88557c100ce3d366e2114e9",
+          "role": "example",
+          "group": "limited-palettes",
+          "caption": "Ten predefined blue shades constrain later color choices."
+        },
+        {
+          "id": "fig-029-026",
+          "page": 29,
+          "path": "references/figures/fig-029-026.webp",
+          "width": 1440,
+          "height": 843,
+          "sha256": "19da2111026cc774fb1eacc78be8104458caa356fca34ef13c15210990acfa21",
+          "role": "example",
+          "group": "limited-type",
+          "caption": "A short list of named pixel sizes constrains typography choices."
+        },
+        {
+          "id": "fig-030-027",
+          "page": 30,
+          "path": "references/figures/fig-030-027.webp",
+          "width": 1440,
+          "height": 180,
+          "sha256": "236f1daf56d6b4a8867ffd4c19f4dda1c25648befa6aee0fc3bcb381b4f15081",
+          "role": "diagram",
+          "group": "size-elimination",
+          "caption": "Four squares compare 12, 16, 24 and 32 pixel sizes."
+        },
+        {
+          "id": "fig-030-028",
+          "page": 30,
+          "path": "references/figures/fig-030-028.webp",
+          "width": 1440,
+          "height": 235,
+          "sha256": "6e1f0ed6c357f01333773a7297244d83584512625bf81fc939e0cafaf90c1612",
+          "role": "comparison",
+          "group": "size-elimination",
+          "caption": "Three Bookmark buttons compare icons at 12, 16 and 24 pixels in context."
+        },
+        {
+          "id": "fig-031-029",
+          "page": 31,
+          "path": "references/figures/fig-031-029.webp",
+          "width": 1440,
+          "height": 234,
+          "sha256": "88ed2d1c35c16bce73832f895feb5d9b4fb56033564cc8bb98137fdaf50f9432",
+          "role": "comparison",
+          "group": "size-elimination",
+          "caption": "The next comparison shifts to 16, 24 and 32 pixel icons, fading the rejected smaller option."
+        }
+      ]
+    },
+    {
+      "id": "not-all-elements-are-equal",
+      "topic": "hierarchy-is-everything",
+      "title": "Not all elements are equal",
+      "page": 36,
+      "reference": "references/hierarchy-is-everything.md#not-all-elements-are-equal",
+      "when": "A crowded dashboard gives all information and actions equal emphasis.",
+      "summary": "Identify the primary content and soften secondary information before adding decoration.",
+      "caution": "Density can be intentional; preserve information needed for the user's task.",
+      "tags": [
+        "dashboard",
+        "crowded",
+        "busy",
+        "hierarchy",
+        "visual priority",
+        "noisy",
+        "everything bold",
+        "no focal point"
+      ],
+      "featured_figures": [
+        "fig-036-030",
+        "fig-037-031"
+      ],
+      "figures": [
+        {
+          "id": "fig-036-030",
+          "page": 36,
+          "path": "references/figures/fig-036-030.webp",
+          "width": 1440,
+          "height": 896,
+          "sha256": "b322344147a39d128ab447aafc90e71c0f88c46f329b00cfd3adda405706a151",
+          "role": "before",
+          "group": "dashboard-hierarchy",
+          "caption": "An investment dashboard gives headings, balances, labels and colored row actions similar visual priority."
+        },
+        {
+          "id": "fig-037-031",
+          "page": 37,
+          "path": "references/figures/fig-037-031.webp",
+          "width": 1440,
+          "height": 896,
+          "sha256": "d0582891196c18d238fc80eea86ea23c0ae35eaca3e9506ea576f044462f29f6",
+          "role": "after",
+          "group": "dashboard-hierarchy",
+          "caption": "The dashboard emphasizes balance values, softens labels and navigation, and quiets repeated Buy and Sell actions."
+        }
+      ]
+    },
+    {
+      "id": "size-isnt-everything",
+      "topic": "hierarchy-is-everything",
+      "title": "Size isn’t everything",
+      "page": 38,
+      "reference": "references/hierarchy-is-everything.md#size-isnt-everything",
+      "when": "The main text is oversized while supporting details are too small.",
+      "summary": "Use weight and color alongside size to establish readable levels of emphasis.",
+      "caution": "Secondary text still needs readable contrast and size; example pixel values are not mandates.",
+      "tags": [
+        "typography",
+        "oversized",
+        "title",
+        "tiny text",
+        "font weight",
+        "hierarchy",
+        "everything same size",
+        "font size only"
+      ],
+      "featured_figures": [
+        "fig-038-032",
+        "fig-039-033",
+        "fig-039-034",
+        "fig-040-035"
+      ],
+      "figures": [
+        {
+          "id": "fig-038-032",
+          "page": 38,
+          "path": "references/figures/fig-038-032.webp",
+          "width": 1440,
+          "height": 1071,
+          "sha256": "21dee4ddc9461c8bc922736ae710c03f3970c5dd1f70db63b0e86b0b6d0f083e",
+          "role": "before",
+          "group": "tour-hierarchy",
+          "caption": "A tour card relies on large size differences, leaving supporting details small and the title oversized."
+        },
+        {
+          "id": "fig-039-033",
+          "page": 39,
+          "path": "references/figures/fig-039-033.webp",
+          "width": 1440,
+          "height": 787,
+          "sha256": "39a7ac3a4e4ad0daf46b64343f87189f40f59bb8236533e901c7bab522a05a63",
+          "role": "example",
+          "group": "tour-hierarchy",
+          "caption": "A smaller bold title and bold price establish emphasis with font weight."
+        },
+        {
+          "id": "fig-039-034",
+          "page": 39,
+          "path": "references/figures/fig-039-034.webp",
+          "width": 1440,
+          "height": 728,
+          "sha256": "98632825f2344c6a4589fde35978fd9f5c0067622a6724306482e1b91c4653ed",
+          "role": "example",
+          "group": "tour-hierarchy",
+          "caption": "Larger supporting copy uses softer colors to remain secondary without becoming tiny."
+        },
+        {
+          "id": "fig-040-035",
+          "page": 40,
+          "path": "references/figures/fig-040-035.webp",
+          "width": 1440,
+          "height": 973,
+          "sha256": "f0e2b3a06d18dff65053c54dff718f52bde01d20ab93e8eb6709be2649c60c03",
+          "role": "after",
+          "group": "tour-hierarchy",
+          "caption": "The tour card combines two weights and three text colors into a readable hierarchy."
+        }
+      ]
+    },
+    {
+      "id": "dont-use-grey-text-on-colored-backgrounds",
+      "topic": "hierarchy-is-everything",
+      "title": "Don’t use grey text on colored backgrounds",
+      "page": 42,
+      "reference": "references/hierarchy-is-everything.md#dont-use-grey-text-on-colored-backgrounds",
+      "when": "Secondary text on a colored panel looks grey, washed out or disabled.",
+      "summary": "Choose an opaque related text color and check it against the actual background.",
+      "caution": "Measure contrast; transparency is acceptable when its composited result is deliberate and verified.",
+      "tags": [
+        "colored background",
+        "secondary text",
+        "washed out",
+        "opacity",
+        "tinted text"
+      ],
+      "featured_figures": [
+        "fig-042-036",
+        "fig-044-040"
+      ],
+      "figures": [
+        {
+          "id": "fig-042-036",
+          "page": 42,
+          "path": "references/figures/fig-042-036.webp",
+          "width": 1440,
+          "height": 1197,
+          "sha256": "5a18a34c4e94da86fce07353267f8d02c59cb5ee2a2ec25a61ac8212b5e94a59",
+          "role": "before",
+          "group": "colored-secondary-text",
+          "caption": "Neutral grey secondary text looks disconnected from a teal testimonial footer."
+        },
+        {
+          "id": "fig-043-037",
+          "page": 43,
+          "path": "references/figures/fig-043-037.webp",
+          "width": 1440,
+          "height": 643,
+          "sha256": "09d13c50ad07b3275873e1cb66fc0095fbf5bed9b544f0d58873419ad0e6889f",
+          "role": "diagram",
+          "group": "neutral-secondary-text",
+          "caption": "A grayscale ramp explains foreground and background contrast on a neutral testimonial footer."
+        },
+        {
+          "id": "fig-043-038",
+          "page": 43,
+          "path": "references/figures/fig-043-038.webp",
+          "width": 1440,
+          "height": 643,
+          "sha256": "1f4d0d54e8a0326fe2e135a56ae99fd9d86fb62158b21940c49cef1cc5e45ecb",
+          "role": "problem",
+          "group": "transparent-secondary-text",
+          "caption": "Semi-transparent white secondary text looks muted on a teal footer."
+        },
+        {
+          "id": "fig-044-039",
+          "page": 44,
+          "path": "references/figures/fig-044-039.webp",
+          "width": 1440,
+          "height": 487,
+          "sha256": "2221121ab191578d9ddca80031e33ace0bea2982a0a83f3cefbf516e71004b6a",
+          "role": "problem",
+          "group": "transparent-secondary-text",
+          "caption": "A magnified patterned footer shows background lines bleeding through translucent letters."
+        },
+        {
+          "id": "fig-044-040",
+          "page": 44,
+          "path": "references/figures/fig-044-040.webp",
+          "width": 1440,
+          "height": 643,
+          "sha256": "c3d480aa6b29ec7cab985ae294c6f00e8598116359e4d56230291de1f7aa1e3d",
+          "role": "after",
+          "group": "colored-secondary-text",
+          "caption": "Opaque light teal secondary text harmonizes with the footer and stays solid over its pattern."
+        }
+      ]
+    },
+    {
+      "id": "emphasize-by-de-emphasizing",
+      "topic": "hierarchy-is-everything",
+      "title": "Emphasize by de-emphasizing",
+      "page": 46,
+      "reference": "references/hierarchy-is-everything.md#emphasize-by-de-emphasizing",
+      "when": "The active navigation or main content cannot stand out because neighboring elements compete.",
+      "summary": "Reduce the emphasis of competitors, such as inactive links or a sidebar panel.",
+      "caution": "Inactive navigation is still available navigation, not a disabled control; maintain contrast and a non-color active cue.",
+      "tags": [
+        "navigation",
+        "nav",
+        "sidebar",
+        "busy",
+        "competing",
+        "active item",
+        "focus",
+        "hierarchy",
+        "tab bar",
+        "active tab",
+        "selected state"
+      ],
+      "featured_figures": [
+        "fig-046-041",
+        "fig-046-042"
+      ],
+      "figures": [
+        {
+          "id": "fig-046-041",
+          "page": 46,
+          "path": "references/figures/fig-046-041.webp",
+          "width": 1440,
+          "height": 292,
+          "sha256": "f4d8e6e04ab0328854ee792e55a034d75c25bd72a0532c9f0739c29b77d0e638",
+          "role": "before",
+          "group": "navigation-emphasis",
+          "caption": "Dark inactive navigation items compete with the purple active Orders item."
+        },
+        {
+          "id": "fig-046-042",
+          "page": 46,
+          "path": "references/figures/fig-046-042.webp",
+          "width": 1440,
+          "height": 293,
+          "sha256": "7b917ed0a98ee6175801b58fce86060e1f250a4db1240fa6998c741e664fb482",
+          "role": "after",
+          "group": "navigation-emphasis",
+          "caption": "Softer inactive navigation text makes the unchanged purple Orders item stand out."
+        },
+        {
+          "id": "fig-047-043",
+          "page": 47,
+          "path": "references/figures/fig-047-043.webp",
+          "width": 1440,
+          "height": 818,
+          "sha256": "9448bb954747d494b35b2919381b7e0a286741153d5a549023812dcc4e271258",
+          "role": "comparison",
+          "group": "sidebar-emphasis",
+          "caption": "Removing the itinerary sidebar's white panel lets the main booking form take priority."
+        }
+      ]
+    },
+    {
+      "id": "labels-are-a-last-resort",
+      "topic": "hierarchy-is-everything",
+      "title": "Labels are a last resort",
+      "page": 48,
+      "reference": "references/hierarchy-is-everything.md#labels-are-a-last-resort",
+      "when": "Displayed data is buried in repetitive label-value pairs.",
+      "summary": "Use recognizable formats or combine labels with values, emphasizing what people scan for.",
+      "caution": "This rule concerns displayed data, not form labels or accessible names. Keep labels when meaning is ambiguous or users scan by label.",
+      "tags": [
+        "data labels",
+        "metadata",
+        "contact",
+        "metrics",
+        "specification",
+        "label value",
+        "key value",
+        "field names"
+      ],
+      "featured_figures": [
+        "fig-048-044",
+        "fig-049-045"
+      ],
+      "figures": [
+        {
+          "id": "fig-048-044",
+          "page": 48,
+          "path": "references/figures/fig-048-044.webp",
+          "width": 1440,
+          "height": 487,
+          "sha256": "acafa3ddf4c739ba905ffa3e774ddd40e4a123d0b2b5a11daa15f13ae865171a",
+          "role": "before",
+          "group": "contact-labels",
+          "caption": "Repeated Name, Job Title, Email and Phone labels flatten a contact card's hierarchy."
+        },
+        {
+          "id": "fig-049-045",
+          "page": 49,
+          "path": "references/figures/fig-049-045.webp",
+          "width": 1440,
+          "height": 487,
+          "sha256": "aef4e39e10f274c3a3c8e2aceddc941692c0a63ef0606b9781acb3ff95323a64",
+          "role": "after",
+          "group": "contact-labels",
+          "caption": "A contact card uses recognizable formats and context, emphasizing the name and role."
+        },
+        {
+          "id": "fig-049-046",
+          "page": 49,
+          "path": "references/figures/fig-049-046.webp",
+          "width": 1440,
+          "height": 437,
+          "sha256": "d102e37b4e248a6fe2202e05128ff7e097490c4026337cce4cd4210972ff40d0",
+          "role": "comparison",
+          "group": "inventory-labels",
+          "caption": "A product card replaces In stock: 12 with 12 left in stock, emphasizing the quantity."
+        },
+        {
+          "id": "fig-050-047",
+          "page": 50,
+          "path": "references/figures/fig-050-047.webp",
+          "width": 1440,
+          "height": 1140,
+          "sha256": "a029969a9f3e12c6477f35b4dd9a819b21d9e81062485dbbbdf000c135436942",
+          "role": "comparison",
+          "group": "property-labels",
+          "caption": "A property card folds bedroom and bathroom labels into values with supporting icons."
+        },
+        {
+          "id": "fig-051-048",
+          "page": 51,
+          "path": "references/figures/fig-051-048.webp",
+          "width": 1440,
+          "height": 469,
+          "sha256": "6da9b6be04cd48d1422b93c2d1928ac25050a126d052debb952ae982721eaa30",
+          "role": "comparison",
+          "group": "metric-labels",
+          "caption": "A heart-rate card emphasizes 82 BPM while treating the Heart rate label as supporting text."
+        },
+        {
+          "id": "fig-051-049",
+          "page": 51,
+          "path": "references/figures/fig-051-049.webp",
+          "width": 1440,
+          "height": 332,
+          "sha256": "ef3adaec2e6fbcad1e718f96aefc8f5cbdcfc755765187bfc98594f4ca62e7f6",
+          "role": "example",
+          "group": "spec-labels",
+          "caption": "A technical specification table emphasizes Height, Width and Depth because readers scan by label."
+        }
+      ]
+    },
+    {
+      "id": "separate-visual-hierarchy-from-document-hierarchy",
+      "topic": "hierarchy-is-everything",
+      "title": "Separate visual hierarchy from document hierarchy",
+      "page": 54,
+      "reference": "references/hierarchy-is-everything.md#separate-visual-hierarchy-from-document-hierarchy",
+      "when": "A large page title competes with more important task content.",
+      "summary": "Choose heading elements for document structure and style their visual emphasis independently.",
+      "caution": "Do not change heading levels or remove accessible structure merely to make text smaller.",
+      "tags": [
+        "page title",
+        "heading",
+        "semantics",
+        "h1",
+        "document hierarchy",
+        "settings"
+      ],
+      "featured_figures": [
+        "fig-054-050",
+        "fig-055-051"
+      ],
+      "figures": [
+        {
+          "id": "fig-054-050",
+          "page": 54,
+          "path": "references/figures/fig-054-050.webp",
+          "width": 1440,
+          "height": 759,
+          "sha256": "ed855208521af0bd124afdae7b9991287879bfcf2594cb79586aa1aeed2a1b12",
+          "role": "before",
+          "group": "page-title",
+          "caption": "A large Manage Account page heading competes with the settings content."
+        },
+        {
+          "id": "fig-055-051",
+          "page": 55,
+          "path": "references/figures/fig-055-051.webp",
+          "width": 1440,
+          "height": 759,
+          "sha256": "cd4a260e03f92a1193b273576889da2a773cf47d19ac7716f77c456bd1026db5",
+          "role": "after",
+          "group": "page-title",
+          "caption": "A smaller Manage Account heading labels the page while giving its content more emphasis."
+        }
+      ]
+    },
+    {
+      "id": "balance-weight-and-contrast",
+      "topic": "hierarchy-is-everything",
+      "title": "Balance weight and contrast",
+      "page": 56,
+      "reference": "references/hierarchy-is-everything.md#balance-weight-and-contrast",
+      "when": "Solid icons overpower nearby labels, or thin borders are either harsh or invisible.",
+      "summary": "Balance visual area against contrast: soften heavy icons or slightly thicken pale separators.",
+      "caution": "Required control boundaries and meaningful icons need adequate contrast; decorative examples are not universal tokens.",
+      "tags": [
+        "heavy icons",
+        "borders",
+        "visual weight",
+        "contrast",
+        "sidebar",
+        "icon too heavy",
+        "faint border",
+        "invisible border"
+      ],
+      "featured_figures": [
+        "fig-057-053",
+        "fig-057-054"
+      ],
+      "figures": [
+        {
+          "id": "fig-056-052",
+          "page": 56,
+          "path": "references/figures/fig-056-052.webp",
+          "width": 1440,
+          "height": 662,
+          "sha256": "9bd1453d9d22f062bcadb7d41b2ba447f89e954e98fb2df9a04bb2b4d992b6eb",
+          "role": "diagram",
+          "group": "visual-weight",
+          "caption": "Filled and thin letterforms cover different surface areas, explaining why weight attracts attention."
+        },
+        {
+          "id": "fig-057-053",
+          "page": 57,
+          "path": "references/figures/fig-057-053.webp",
+          "width": 1440,
+          "height": 779,
+          "sha256": "f4ab9d58e184e35f0908099f9d76e6a246c16b8488e78e8762089518ede68748",
+          "role": "before",
+          "group": "icon-weight",
+          "caption": "Dark solid sidebar icons overpower the adjacent labels in a music app."
+        },
+        {
+          "id": "fig-057-054",
+          "page": 57,
+          "path": "references/figures/fig-057-054.webp",
+          "width": 1440,
+          "height": 760,
+          "sha256": "3f07b266de10cfd7b36d978d5330901666768d1eccbc4533b100f0350cf8b657",
+          "role": "after",
+          "group": "icon-weight",
+          "caption": "Lighter icons balance their visual weight against darker text labels."
+        },
+        {
+          "id": "fig-058-055",
+          "page": 58,
+          "path": "references/figures/fig-058-055.webp",
+          "width": 1440,
+          "height": 1159,
+          "sha256": "9b5664fd8fb3fb193030885ae77858b2eac0b4fa47b7dcb6d2342a98e3f1a4e9",
+          "role": "before",
+          "group": "border-weight",
+          "caption": "Two feeds show a thin divider that is either too dark or too faint."
+        },
+        {
+          "id": "fig-059-056",
+          "page": 59,
+          "path": "references/figures/fig-059-056.webp",
+          "width": 1440,
+          "height": 1158,
+          "sha256": "026242f55c1d715aed41cba8fc93f9bf7c65c20e599c0158ded20b8434e3bfd8",
+          "role": "after",
+          "group": "border-weight",
+          "caption": "A thicker, lighter divider separates feed items without a harsh dark line."
+        }
+      ]
+    },
+    {
+      "id": "semantics-are-secondary",
+      "topic": "hierarchy-is-everything",
+      "title": "Semantics are secondary",
+      "page": 60,
+      "reference": "references/hierarchy-is-everything.md#semantics-are-secondary",
+      "when": "Every action is a loud colored button, including rare destructive actions.",
+      "summary": "Assign primary, secondary and tertiary emphasis according to each action's role in the current task.",
+      "caution": "The title refers to visual button priority, not HTML semantics. Keep destructive labels and required confirmations clear.",
+      "tags": [
+        "button soup",
+        "actions",
+        "primary",
+        "secondary",
+        "tertiary",
+        "delete",
+        "destructive",
+        "too many buttons",
+        "action bar",
+        "bulk actions",
+        "toolbar",
+        "call to action"
+      ],
+      "featured_figures": [
+        "fig-060-057",
+        "fig-061-058"
+      ],
+      "figures": [
+        {
+          "id": "fig-060-057",
+          "page": 60,
+          "path": "references/figures/fig-060-057.webp",
+          "width": 1440,
+          "height": 647,
+          "sha256": "75767fcc1fa0d1f65d7526f274acd4898cd75aad7a5d0258dc8c4d892356cc13",
+          "role": "before",
+          "group": "action-hierarchy",
+          "caption": "Delete, Edit and Publish buttons all use strong fills and compete on a listing card."
+        },
+        {
+          "id": "fig-061-058",
+          "page": 61,
+          "path": "references/figures/fig-061-058.webp",
+          "width": 1440,
+          "height": 647,
+          "sha256": "138e2de2cfb4f1ae4cad8e33a14d1d58572de0f4d39558d233253150bfd8776e",
+          "role": "after",
+          "group": "action-hierarchy",
+          "caption": "Publish is filled, Edit is softly tinted, and Delete becomes a quiet tertiary action."
+        },
+        {
+          "id": "fig-061-059",
+          "page": 61,
+          "path": "references/figures/fig-061-059.webp",
+          "width": 1440,
+          "height": 703,
+          "sha256": "55928451fc0099b6da17bf078fbe6578d769b64f194e6104215fb2d4e438a814",
+          "role": "comparison",
+          "group": "action-tiers",
+          "caption": "Filled, outlined and text treatments demonstrate primary, secondary and tertiary actions on varied backgrounds."
+        },
+        {
+          "id": "fig-062-060",
+          "page": 62,
+          "path": "references/figures/fig-062-060.webp",
+          "width": 1440,
+          "height": 334,
+          "sha256": "ff64322be615f4b775c757a28d2f813db2326b50b97a6b0b5260af6e44c00ead",
+          "role": "comparison",
+          "group": "destructive-tiers",
+          "caption": "The same Unpublish action receives primary, secondary or tertiary emphasis according to its role."
+        },
+        {
+          "id": "fig-062-061",
+          "page": 62,
+          "path": "references/figures/fig-062-061.webp",
+          "width": 1440,
+          "height": 752,
+          "sha256": "b026951d39d63e537c4c59892ed0d43d84311eb2d3fca7e99d036cd5223bc256",
+          "role": "example",
+          "group": "destructive-confirmation",
+          "caption": "A deactivation dialog makes the destructive action red and primary at the confirmation step."
+        }
+      ]
+    },
+    {
+      "id": "start-with-too-much-white-space",
+      "topic": "layout-and-spacing",
+      "title": "Start with too much white space",
+      "page": 66,
+      "reference": "references/layout-and-spacing.md#start-with-too-much-white-space",
+      "when": "A card or form feels cramped and every section barely fits.",
+      "summary": "Start with generous spacing, then remove excess until grouping and density fit the task.",
+      "caution": "Dense dashboards are valid when deliberate; whitespace must not hide essential information.",
+      "tags": [
+        "cramped",
+        "dense",
+        "padding",
+        "white space",
+        "breathing room",
+        "squeezed",
+        "tight",
+        "no room"
+      ],
+      "featured_figures": [
+        "fig-066-062"
+      ],
+      "figures": [
+        {
+          "id": "fig-066-062",
+          "page": 66,
+          "path": "references/figures/fig-066-062.webp",
+          "width": 1440,
+          "height": 1378,
+          "sha256": "4498e7556e7708b0774e957ad61fd7a4d8b4252b3dac57e82ed95349b16d38bc",
+          "role": "comparison",
+          "group": "form-breathing-room",
+          "caption": "A two-factor setup form gains space around its title, instructions, field group and action."
+        },
+        {
+          "id": "fig-067-063",
+          "page": 67,
+          "path": "references/figures/fig-067-063.webp",
+          "width": 1440,
+          "height": 1358,
+          "sha256": "50e0fa84e429e286446cb6325d7ac49ac3904f1c9baea4849eb5b876f8e1e6a4",
+          "role": "comparison",
+          "group": "review-spacing",
+          "caption": "A cramped ratings card is compared with a roomier version while exploring spacing."
+        },
+        {
+          "id": "fig-068-064",
+          "page": 68,
+          "path": "references/figures/fig-068-064.webp",
+          "width": 1440,
+          "height": 1795,
+          "sha256": "7ceb2d89522935ce0e11e2580aeb5f247fbdb3394f8e27d544e40b0a7bd6bb78",
+          "role": "comparison",
+          "group": "review-spacing",
+          "caption": "A ratings card trims excessive gaps while retaining clear separation between sections."
+        },
+        {
+          "id": "fig-069-065",
+          "page": 69,
+          "path": "references/figures/fig-069-065.webp",
+          "width": 1440,
+          "height": 752,
+          "sha256": "6878dd97115b6220f7e30b399c10c53134154ec52f22743f82cdfb3c7ad3f171",
+          "role": "example",
+          "group": "deliberate-density",
+          "caption": "A sports dashboard keeps statistics and a roster compact for simultaneous scanning."
+        }
+      ]
+    },
+    {
+      "id": "establish-a-spacing-and-sizing-system",
+      "topic": "layout-and-spacing",
+      "title": "Establish a spacing and sizing system",
+      "page": 70,
+      "reference": "references/layout-and-spacing.md#establish-a-spacing-and-sizing-system",
+      "when": "Margins and padding vary arbitrarily across similar components.",
+      "summary": "Replace arbitrary values with a spacing scale whose steps remain perceptibly different.",
+      "caution": "Reuse existing tokens; the scale and percentage guidance here are starting points, not required replacements.",
+      "tags": [
+        "spacing scale",
+        "tokens",
+        "padding",
+        "margins",
+        "inconsistent gaps",
+        "random padding",
+        "arbitrary values"
+      ],
+      "featured_figures": [
+        "fig-070-066",
+        "fig-074-070"
+      ],
+      "figures": [
+        {
+          "id": "fig-070-066",
+          "page": 70,
+          "path": "references/figures/fig-070-066.webp",
+          "width": 1440,
+          "height": 1012,
+          "sha256": "d463939e4ce47fdb30c328045b1a80041fac5209e39a5cd8b9ed53db5d188b74",
+          "role": "before",
+          "group": "spacing-system",
+          "caption": "A hotel card uses many unrelated gaps such as 13, 15, 21, 25 and 26 pixels."
+        },
+        {
+          "id": "fig-071-067",
+          "page": 71,
+          "path": "references/figures/fig-071-067.webp",
+          "width": 1440,
+          "height": 838,
+          "sha256": "0c003f2f767fa4a2bc3fcdb06c5a9597d6f647110beeb10838df14ee2254cb2b",
+          "role": "comparison",
+          "group": "relative-steps",
+          "caption": "Download buttons compare 16, 20 and 24 pixel icons to show perceptible relative size changes."
+        },
+        {
+          "id": "fig-072-068",
+          "page": 72,
+          "path": "references/figures/fig-072-068.webp",
+          "width": 1440,
+          "height": 1051,
+          "sha256": "820d712823bc6dc339533c2d02345c437fcadf97cbd539dcf6a647a047c13271",
+          "role": "comparison",
+          "group": "relative-steps",
+          "caption": "Delivery cards at 500 and 520 pixels look nearly alike despite a 20 pixel change."
+        },
+        {
+          "id": "fig-073-069",
+          "page": 73,
+          "path": "references/figures/fig-073-069.webp",
+          "width": 1440,
+          "height": 1217,
+          "sha256": "5703cd6fc63ff2bf50472589424b2454bcf398a8f1a66d54e198284fdce912e8",
+          "role": "diagram",
+          "group": "spacing-scale",
+          "caption": "A spacing scale runs from 4 to 768 pixels with wider steps at larger sizes."
+        },
+        {
+          "id": "fig-074-070",
+          "page": 74,
+          "path": "references/figures/fig-074-070.webp",
+          "width": 1440,
+          "height": 1012,
+          "sha256": "32dbd39374dd11f70847dbdc0d7485aaf265f2f9a368781a1ab4fa8cb104e46d",
+          "role": "after",
+          "group": "spacing-system",
+          "caption": "The hotel card replaces arbitrary gaps with consistent 12 and 24 pixel spacing."
+        }
+      ]
+    },
+    {
+      "id": "you-dont-have-to-fill-the-whole-screen",
+      "topic": "layout-and-spacing",
+      "title": "You don’t have to fill the whole screen",
+      "page": 76,
+      "reference": "references/layout-and-spacing.md#you-dont-have-to-fill-the-whole-screen",
+      "when": "Forms or content stretch across a wide viewport without gaining usefulness.",
+      "summary": "Constrain content to a readable width; put supporting descriptions beside fields when useful.",
+      "caution": "Wide tables and other content may legitimately need the available width; reflow at narrow sizes.",
+      "tags": [
+        "stretched",
+        "full width",
+        "wide form",
+        "max width",
+        "settings",
+        "layout",
+        "too wide",
+        "empty space"
+      ],
+      "featured_figures": [
+        "fig-076-071",
+        "fig-077-072"
+      ],
+      "figures": [
+        {
+          "id": "fig-076-071",
+          "page": 76,
+          "path": "references/figures/fig-076-071.webp",
+          "width": 1440,
+          "height": 847,
+          "sha256": "12da149b47638cac97dd894b4a1529cc83671f3850998ce3ceeaf8f3519e4877",
+          "role": "before",
+          "group": "cart-width",
+          "caption": "A cart stretches across the browser, separating product details from prices unnecessarily."
+        },
+        {
+          "id": "fig-077-072",
+          "page": 77,
+          "path": "references/figures/fig-077-072.webp",
+          "width": 1440,
+          "height": 847,
+          "sha256": "5f8c0b35ba284ee44fe94487762c3eb5e0e06d2fa67051df71591bced00ab15d",
+          "role": "after",
+          "group": "cart-width",
+          "caption": "A constrained cart keeps descriptions, prices and totals close enough to scan."
+        },
+        {
+          "id": "fig-077-073",
+          "page": 77,
+          "path": "references/figures/fig-077-073.webp",
+          "width": 1440,
+          "height": 799,
+          "sha256": "c0e10266f9e28a356a576927966c12eb75436c885c9b237179b254dbb3f3265e",
+          "role": "example",
+          "group": "independent-widths",
+          "caption": "A narrow login card sits beneath full-width navigation."
+        },
+        {
+          "id": "fig-078-074",
+          "page": 78,
+          "path": "references/figures/fig-078-074.webp",
+          "width": 1440,
+          "height": 1223,
+          "sha256": "68f5061e100f0fe0c5ede273a6e007270e504d141cc6e5fb4a901e6a98a750b6",
+          "role": "example",
+          "group": "podcast-responsive",
+          "caption": "A podcast screen arranges artwork, playback and episodes in a narrow mobile layout."
+        },
+        {
+          "id": "fig-079-075",
+          "page": 79,
+          "path": "references/figures/fig-079-075.webp",
+          "width": 1440,
+          "height": 1347,
+          "sha256": "f14e9cc2df6f93d9d24032f46a8d70a4b3d334cd65246425a5068b82f6ac9f38",
+          "role": "example",
+          "group": "podcast-responsive",
+          "caption": "The desktop podcast screen keeps its content compact while widening the surrounding background."
+        },
+        {
+          "id": "fig-080-076",
+          "page": 80,
+          "path": "references/figures/fig-080-076.webp",
+          "width": 1440,
+          "height": 1857,
+          "sha256": "61741cd06a4ac1ac500727033f309ed439de7ad444945d665895077b42bf67a2",
+          "role": "before",
+          "group": "settings-columns",
+          "caption": "A settings page stacks section descriptions and fields into a long narrow column."
+        },
+        {
+          "id": "fig-081-077",
+          "page": 81,
+          "path": "references/figures/fig-081-077.webp",
+          "width": 1440,
+          "height": 1520,
+          "sha256": "c152933feb7c328ffb33f27f468e2baecb9fbd9425d85705cfbbd4cd16eee1e0",
+          "role": "after",
+          "group": "settings-columns",
+          "caption": "Settings descriptions move beside their fields, using desktop width without stretching the inputs."
+        }
+      ]
+    },
+    {
+      "id": "grids-are-overrated",
+      "topic": "layout-and-spacing",
+      "title": "Grids are overrated",
+      "page": 84,
+      "reference": "references/layout-and-spacing.md#grids-are-overrated",
+      "when": "A percentage sidebar or grid-bound card becomes too wide or too narrow at different viewports.",
+      "summary": "Size stable elements for their content and let the main content flex within useful limits.",
+      "caution": "This critiques rigid percentage layouts, not CSS Grid. Collapse or reflow sidebars when narrow space demands it.",
+      "tags": [
+        "sidebar",
+        "responsive",
+        "grid",
+        "percent",
+        "width",
+        "layout",
+        "breakpoint",
+        "narrow viewport",
+        "overflow",
+        "phone",
+        "wraps"
+      ],
+      "featured_figures": [
+        "fig-087-083",
+        "fig-087-084"
+      ],
+      "figures": [
+        {
+          "id": "fig-084-078",
+          "page": 84,
+          "path": "references/figures/fig-084-078.webp",
+          "width": 1440,
+          "height": 857,
+          "sha256": "70100f1aa53b05bf64e20cbec795121b4fa04f6014410c241bb8c474145f5f26",
+          "role": "diagram",
+          "group": "column-grid",
+          "caption": "A page shell is overlaid with a twelve-column layout grid."
+        },
+        {
+          "id": "fig-085-079",
+          "page": 85,
+          "path": "references/figures/fig-085-079.webp",
+          "width": 1440,
+          "height": 604,
+          "sha256": "6ad1260d8f6072ac05d697c0214595e21d09e98f3b12c6b2dd785752899d7a1d",
+          "role": "diagram",
+          "group": "column-grid",
+          "caption": "Three, six and three grid columns become 25, 50 and 25 percent widths."
+        },
+        {
+          "id": "fig-085-080",
+          "page": 85,
+          "path": "references/figures/fig-085-080.webp",
+          "width": 1440,
+          "height": 604,
+          "sha256": "afeed3b0e860b5cfe83531ac73b4261a3d710e2381d6f269afcf63e75addf753",
+          "role": "diagram",
+          "group": "percentage-sidebar",
+          "caption": "A sidebar occupies 25 percent of a medium-width shell."
+        },
+        {
+          "id": "fig-086-081",
+          "page": 86,
+          "path": "references/figures/fig-086-081.webp",
+          "width": 1440,
+          "height": 526,
+          "sha256": "688dc58277a6e4c27a2ef247d65851caad0c8863cfc9222b763c10fb4e8b702c",
+          "role": "problem",
+          "group": "percentage-sidebar",
+          "caption": "The same percentage sidebar wastes space as the browser widens."
+        },
+        {
+          "id": "fig-086-082",
+          "page": 86,
+          "path": "references/figures/fig-086-082.webp",
+          "width": 1440,
+          "height": 526,
+          "sha256": "76828c08dd357a536b5c5327c014b87db6e1b50f7b720877dfac80af443dde9a",
+          "role": "problem",
+          "group": "percentage-sidebar",
+          "caption": "The same percentage sidebar becomes cramped as the browser narrows."
+        },
+        {
+          "id": "fig-087-083",
+          "page": 87,
+          "path": "references/figures/fig-087-083.webp",
+          "width": 1440,
+          "height": 872,
+          "sha256": "30c337fcfcbcc21a638b3a754df6ca7e3d444d8fbe92948dd02ee09164367353",
+          "role": "comparison",
+          "group": "fixed-sidebar",
+          "caption": "An invoice dashboard keeps its sidebar width steady while its main cards reflow."
+        },
+        {
+          "id": "fig-087-084",
+          "page": 87,
+          "path": "references/figures/fig-087-084.webp",
+          "width": 1440,
+          "height": 797,
+          "sha256": "234f236c0904ed71363184b3ba0a31d7ee10c11e762d90d15957f399ff9e2916",
+          "role": "comparison",
+          "group": "fixed-avatar",
+          "caption": "A feed card preserves avatar size while the text column changes width."
+        },
+        {
+          "id": "fig-088-085",
+          "page": 88,
+          "path": "references/figures/fig-088-085.webp",
+          "width": 1440,
+          "height": 632,
+          "sha256": "ec9f8d10207f8307bb336579e8a6a19b424fd17b92cc01aad7fe4eba939ac13d",
+          "role": "diagram",
+          "group": "grid-login",
+          "caption": "A login card is assigned a fraction of a column grid."
+        },
+        {
+          "id": "fig-088-086",
+          "page": 88,
+          "path": "references/figures/fig-088-086.webp",
+          "width": 1440,
+          "height": 644,
+          "sha256": "b163d3237b555b8a11d0f10fb36fb636198e331f44bd283f4158915562d6f0a4",
+          "role": "diagram",
+          "group": "grid-login",
+          "caption": "Changing the login card's column span changes its width at another layout size."
+        },
+        {
+          "id": "fig-089-087",
+          "page": 89,
+          "path": "references/figures/fig-089-087.webp",
+          "width": 1440,
+          "height": 1265,
+          "sha256": "3bb60674b3a45508cb6d6c89264f77d104fe8b0e3c79bbe24c343174a66113fe",
+          "role": "problem",
+          "group": "grid-login",
+          "caption": "Breakpoint-dependent column spans make a login card wider in the smaller browser."
+        },
+        {
+          "id": "fig-090-088",
+          "page": 90,
+          "path": "references/figures/fig-090-088.webp",
+          "width": 1440,
+          "height": 1265,
+          "sha256": "e87543b0075eeb5afbb456ca0e2099b6109a1a2907c8e5a9b141ae2f30edcd7b",
+          "role": "example",
+          "group": "constrained-login",
+          "caption": "A maximum-width login card keeps its useful size, shrinking only on a narrow viewport."
+        }
+      ]
+    },
+    {
+      "id": "relative-sizing-doesnt-scale",
+      "topic": "layout-and-spacing",
+      "title": "Relative sizing doesn’t scale",
+      "page": 92,
+      "reference": "references/layout-and-spacing.md#relative-sizing-doesnt-scale",
+      "when": "Mobile headings dominate the screen, or button variants look like zoomed copies.",
+      "summary": "Tune headline sizes and component padding independently across size variants.",
+      "caution": "Keep body text readable and hit targets usable; shrinking every dimension is not the goal.",
+      "tags": [
+        "mobile",
+        "heading",
+        "responsive",
+        "button padding",
+        "type ratio",
+        "phone",
+        "small screen"
+      ],
+      "featured_figures": [
+        "fig-093-090",
+        "fig-093-091"
+      ],
+      "figures": [
+        {
+          "id": "fig-092-089",
+          "page": 92,
+          "path": "references/figures/fig-092-089.webp",
+          "width": 1440,
+          "height": 812,
+          "sha256": "df3f020b7468c90d4f5610753ad09873f29b4e68ebae80d5772186a5c5daa55d",
+          "role": "example",
+          "group": "responsive-heading",
+          "caption": "A desktop article uses a large heading relative to body copy."
+        },
+        {
+          "id": "fig-093-090",
+          "page": 93,
+          "path": "references/figures/fig-093-090.webp",
+          "width": 1440,
+          "height": 720,
+          "sha256": "51facb357fbdc250e675927f86f3eb3cbddd1b44a9a9e00d9d97fc99bad11841",
+          "role": "before",
+          "group": "mobile-heading",
+          "caption": "Keeping the desktop heading-to-body ratio makes the mobile heading wrap excessively."
+        },
+        {
+          "id": "fig-093-091",
+          "page": 93,
+          "path": "references/figures/fig-093-091.webp",
+          "width": 1440,
+          "height": 720,
+          "sha256": "4159c4fb83bb8bb42ca91bbba4425f542f1a81fe96171180e5c2542b617e741b",
+          "role": "after",
+          "group": "mobile-heading",
+          "caption": "The mobile heading shrinks independently, keeping more body content visible."
+        },
+        {
+          "id": "fig-094-092",
+          "page": 94,
+          "path": "references/figures/fig-094-092.webp",
+          "width": 1440,
+          "height": 461,
+          "sha256": "93ade892cf5c05f32c5c2ea8f161b361284c8adab9550e90b4e24b208382daed",
+          "role": "diagram",
+          "group": "button-sizing",
+          "caption": "A base button shows its font size and horizontal and vertical padding."
+        },
+        {
+          "id": "fig-095-093",
+          "page": 95,
+          "path": "references/figures/fig-095-093.webp",
+          "width": 1440,
+          "height": 506,
+          "sha256": "3f30da24aa3a9fc63004b0e1495270137ac6701fea21666b2543e3d36dd9e6b1",
+          "role": "before",
+          "group": "button-padding",
+          "caption": "Button sizes scale padding proportionally with font size and look like zoomed copies."
+        },
+        {
+          "id": "fig-095-094",
+          "page": 95,
+          "path": "references/figures/fig-095-094.webp",
+          "width": 1440,
+          "height": 507,
+          "sha256": "814badc04c22355754f170e97b9207672640ab50bd1d9fe32bfc61e1d32c2f82",
+          "role": "after",
+          "group": "button-padding",
+          "caption": "Large buttons receive more generous padding while small variants use tighter padding."
+        }
+      ]
+    },
+    {
+      "id": "avoid-ambiguous-spacing",
+      "topic": "layout-and-spacing",
+      "title": "Avoid ambiguous spacing",
+      "page": 96,
+      "reference": "references/layout-and-spacing.md#avoid-ambiguous-spacing",
+      "when": "Labels, headings, list items or horizontal controls appear connected to the wrong neighbors.",
+      "summary": "Make spacing inside a group smaller than spacing between groups.",
+      "caution": "Keep programmatic relationships such as label-to-input associations as well as visual grouping.",
+      "tags": [
+        "form",
+        "labels",
+        "confusing",
+        "grouping",
+        "gaps",
+        "list",
+        "spacing",
+        "toolbar",
+        "filter bar",
+        "action bar",
+        "bulk actions",
+        "squeezed",
+        "wraps",
+        "collide",
+        "unclear groups",
+        "related controls"
+      ],
+      "featured_figures": [
+        "fig-097-096",
+        "fig-097-097"
+      ],
+      "figures": [
+        {
+          "id": "fig-096-095",
+          "page": 96,
+          "path": "references/figures/fig-096-095.webp",
+          "width": 1440,
+          "height": 1129,
+          "sha256": "6d127a17ffd03f03ec8e83ebce62106c2b95a9968504a202727aad187ce384d8",
+          "role": "example",
+          "group": "explicit-grouping",
+          "caption": "Restaurant results use dividers to make each group of details unambiguous."
+        },
+        {
+          "id": "fig-097-096",
+          "page": 97,
+          "path": "references/figures/fig-097-096.webp",
+          "width": 1440,
+          "height": 771,
+          "sha256": "0b61672bd4f454313a69e77a83cd578fd8c0770a1c20ff189468dd86eaefc451",
+          "role": "before",
+          "group": "form-grouping",
+          "caption": "Equal gaps above and below field labels obscure which input each label belongs to."
+        },
+        {
+          "id": "fig-097-097",
+          "page": 97,
+          "path": "references/figures/fig-097-097.webp",
+          "width": 1440,
+          "height": 772,
+          "sha256": "d73ac61ee15f844635b9c67f4681908941d9f3a668886b9a373e993c84f82733",
+          "role": "after",
+          "group": "form-grouping",
+          "caption": "Labels sit closer to their inputs than to preceding fields, clarifying form groups."
+        },
+        {
+          "id": "fig-098-098",
+          "page": 98,
+          "path": "references/figures/fig-098-098.webp",
+          "width": 1440,
+          "height": 740,
+          "sha256": "95e17dc9d650f5a9fd87e9b91e94c47bdd0e58f1343375597466907d96b7138b",
+          "role": "comparison",
+          "group": "heading-grouping",
+          "caption": "More space above an article heading and less below connects it to the following paragraph."
+        },
+        {
+          "id": "fig-098-099",
+          "page": 98,
+          "path": "references/figures/fig-098-099.webp",
+          "width": 1440,
+          "height": 725,
+          "sha256": "3dffb7c21ad91bbf32b51948abff7848e7e15f0ab07dd55720676da5415a1fd4",
+          "role": "comparison",
+          "group": "list-grouping",
+          "caption": "Larger gaps between bullets distinguish list items from wrapped lines within each item."
+        },
+        {
+          "id": "fig-099-100",
+          "page": 99,
+          "path": "references/figures/fig-099-100.webp",
+          "width": 1440,
+          "height": 938,
+          "sha256": "e006bab6f16fe45be739dcf41b425a3b5bc80edd17ee2a4e25776adf3f5d3159",
+          "role": "comparison",
+          "group": "horizontal-grouping",
+          "caption": "Reaction counts move closer to their icons, with larger gaps between reaction groups."
+        }
+      ]
+    },
+    {
+      "id": "establish-a-type-scale",
+      "topic": "designing-text",
+      "title": "Establish a type scale",
+      "page": 102,
+      "reference": "references/designing-text.md#establish-a-type-scale",
+      "when": "Similar text roles use many nearly identical font sizes.",
+      "summary": "Define a small set of useful type sizes and reuse them by role.",
+      "caution": "Prefer existing tokens and avoid accidental em compounding; intentional relative sizing and fractional values are valid.",
+      "tags": [
+        "type scale",
+        "font size",
+        "tokens",
+        "inconsistent text",
+        "typography"
+      ],
+      "featured_figures": [
+        "fig-102-101",
+        "fig-106-104"
+      ],
+      "figures": [
+        {
+          "id": "fig-102-101",
+          "page": 102,
+          "path": "references/figures/fig-102-101.webp",
+          "width": 1440,
+          "height": 954,
+          "sha256": "6dbb7ca823a9be76b994991d8fdbf546a4409500d479c2204e3ad2c783a6bcc3",
+          "role": "before",
+          "group": "product-type-scale",
+          "caption": "A product page accumulates many unrelated text sizes across its labels, price and delivery form."
+        },
+        {
+          "id": "fig-103-102",
+          "page": 103,
+          "path": "references/figures/fig-103-102.webp",
+          "width": 1440,
+          "height": 1052,
+          "sha256": "cd5687ab64893eb3a09bd1a54f67a672b0de7fcc36787f07fdd7bd2c4a6ea67a",
+          "role": "diagram",
+          "group": "modular-scale",
+          "caption": "A ratio-based type scale produces fractional values and large gaps between useful interface sizes."
+        },
+        {
+          "id": "fig-105-103",
+          "page": 105,
+          "path": "references/figures/fig-105-103.webp",
+          "width": 1440,
+          "height": 1518,
+          "sha256": "3f2efa8d89aa27b89868203f7669660019a2df7f2c013a5acaec88d7923c7ab9",
+          "role": "example",
+          "group": "handpicked-type-scale",
+          "caption": "A hand-picked scale ranges from 12 to 72 pixels with smaller steps for body sizes."
+        },
+        {
+          "id": "fig-106-104",
+          "page": 106,
+          "path": "references/figures/fig-106-104.webp",
+          "width": 1440,
+          "height": 954,
+          "sha256": "4626f306535cc79dec1a7ac3c6a8eabb970b59884eaa923e5dae8080f21efcfc",
+          "role": "after",
+          "group": "product-type-scale",
+          "caption": "The product page reuses a small set of sizes for labels, body copy, title and price."
+        },
+        {
+          "id": "fig-106-105",
+          "page": 106,
+          "path": "references/figures/fig-106-105.webp",
+          "width": 1440,
+          "height": 421,
+          "sha256": "8d80155b4c43e759d740edfcb51c01d52aea28b51b72ddf2b6980ab4ce1b1e8d",
+          "role": "diagram",
+          "group": "nested-em",
+          "caption": "A type-size list expressed in em illustrates values whose computed size depends on the parent."
+        }
+      ]
+    },
+    {
+      "id": "use-good-fonts",
+      "topic": "designing-text",
+      "title": "Use good fonts",
+      "page": 108,
+      "reference": "references/designing-text.md#use-good-fonts",
+      "when": "Body text is hard to read or font selection is consuming the design process.",
+      "summary": "Start with a legible family and verify its actual weights, proportions and language coverage.",
+      "caution": "Popularity and number of styles are selection shortcuts, not quality guarantees; variable fonts need not have many files.",
+      "tags": [
+        "font",
+        "typeface",
+        "legibility",
+        "x height",
+        "body text"
+      ],
+      "featured_figures": [
+        "fig-110-108"
+      ],
+      "figures": [
+        {
+          "id": "fig-108-106",
+          "page": 108,
+          "path": "references/figures/fig-108-106.webp",
+          "width": 1440,
+          "height": 545,
+          "sha256": "6a3b6be730b473e207e6502d5863b98bfebd0195c1678735b60853ac0caa0b3d",
+          "role": "example",
+          "group": "font-selection",
+          "caption": "A grid of font families shows how many typeface choices are available."
+        },
+        {
+          "id": "fig-109-107",
+          "page": 109,
+          "path": "references/figures/fig-109-107.webp",
+          "width": 1440,
+          "height": 955,
+          "sha256": "7a189ad5f615e0a0d3f6bdc5d778362361ee859ecbeed0fb4febbcf9965b70e1",
+          "role": "example",
+          "group": "font-selection",
+          "caption": "A font directory filters sans-serif families by the number of available styles."
+        },
+        {
+          "id": "fig-110-108",
+          "page": 110,
+          "path": "references/figures/fig-110-108.webp",
+          "width": 1440,
+          "height": 546,
+          "sha256": "811df463a69cc6c5d8d9886ff8ade636d6efeec9bee95c866f4ebb010171ea80",
+          "role": "comparison",
+          "group": "font-legibility",
+          "caption": "Futura and Proxima Nova compare tight spacing and shorter x-height with wider spacing and taller lowercase letters."
+        },
+        {
+          "id": "fig-111-109",
+          "page": 111,
+          "path": "references/figures/fig-111-109.webp",
+          "width": 1440,
+          "height": 857,
+          "sha256": "91253ea88deb82053780b986e16822a161aadbd3be60c225054efec9dbfd4bc3",
+          "role": "example",
+          "group": "font-selection",
+          "caption": "A font directory sorts families by popularity to narrow the choices."
+        },
+        {
+          "id": "fig-111-110",
+          "page": 111,
+          "path": "references/figures/fig-111-110.webp",
+          "width": 1440,
+          "height": 600,
+          "sha256": "8de2293655c3621982d124422c171c96f31e4c2e5d45ec2362aa7f3f97e41ef4",
+          "role": "example",
+          "group": "font-inspection",
+          "caption": "Browser styles reveal the font family used in an existing delivery card."
+        }
+      ]
+    },
+    {
+      "id": "keep-your-line-length-in-check",
+      "topic": "designing-text",
+      "title": "Keep your line length in check",
+      "page": 114,
+      "reference": "references/designing-text.md#keep-your-line-length-in-check",
+      "when": "Paragraphs span too much of the page and are tiring to read.",
+      "summary": "Constrain reading measure independently of the wider layout.",
+      "caution": "The 45-75 character range is a prose heuristic; judge the actual script, font, device and content.",
+      "tags": [
+        "long lines",
+        "paragraph",
+        "reading measure",
+        "line length",
+        "prose",
+        "wide text",
+        "full width paragraph"
+      ],
+      "featured_figures": [
+        "fig-115-114",
+        "fig-116-115"
+      ],
+      "figures": [
+        {
+          "id": "fig-114-111",
+          "page": 114,
+          "path": "references/figures/fig-114-111.webp",
+          "width": 1440,
+          "height": 575,
+          "sha256": "f654ec311042edce7e73150aa443594458a4bac7ec3cf7ad447114958d95be7d",
+          "role": "problem",
+          "group": "long-lines",
+          "caption": "A paragraph stretches to about 120 characters per line."
+        },
+        {
+          "id": "fig-114-112",
+          "page": 114,
+          "path": "references/figures/fig-114-112.webp",
+          "width": 1440,
+          "height": 415,
+          "sha256": "93cef39d70f0d3ebc99f0c5eb98e4f3d09de6de5594510eb82c87c5a3cb23b35",
+          "role": "example",
+          "group": "reading-measure",
+          "caption": "A narrow paragraph demonstrates roughly 45 to 55 characters per line."
+        },
+        {
+          "id": "fig-115-113",
+          "page": 115,
+          "path": "references/figures/fig-115-113.webp",
+          "width": 1440,
+          "height": 695,
+          "sha256": "53f5bb125d746840033ddb98db5deeb87d9959b084a5ef07038be6b826ed870a",
+          "role": "comparison",
+          "group": "reading-measure",
+          "caption": "Two paragraphs compare roughly 55 to 65 and 65 to 75 characters per line."
+        },
+        {
+          "id": "fig-115-114",
+          "page": 115,
+          "path": "references/figures/fig-115-114.webp",
+          "width": 1440,
+          "height": 573,
+          "sha256": "13bc46eb265a62a6951399237f4ca58142798e121d29e316c76da91f14e296a0",
+          "role": "before",
+          "group": "hero-measure",
+          "caption": "Introductory text spans the full width of a three-column feature section."
+        },
+        {
+          "id": "fig-116-115",
+          "page": 116,
+          "path": "references/figures/fig-116-115.webp",
+          "width": 1440,
+          "height": 615,
+          "sha256": "75e9dc60cc2d9667d2014762605bd155e297a3fe9c0c2268d157a1c00e2c9728",
+          "role": "after",
+          "group": "hero-measure",
+          "caption": "A narrower introductory paragraph remains centered above the wider feature grid."
+        }
+      ]
+    },
+    {
+      "id": "baseline-not-center",
+      "topic": "designing-text",
+      "title": "Baseline, not center",
+      "page": 118,
+      "reference": "references/designing-text.md#baseline-not-center",
+      "when": "A title and smaller adjacent actions look vertically misaligned.",
+      "summary": "Align mixed text sizes on their baseline.",
+      "caution": "Use optical or center alignment when it suits icons or non-text controls; inspect the rendered result.",
+      "tags": [
+        "baseline",
+        "alignment",
+        "misaligned",
+        "heading",
+        "inline actions",
+        "icon text alignment",
+        "button beside title"
+      ],
+      "featured_figures": [
+        "fig-119-117",
+        "fig-120-119"
+      ],
+      "figures": [
+        {
+          "id": "fig-118-116",
+          "page": 118,
+          "path": "references/figures/fig-118-116.webp",
+          "width": 1440,
+          "height": 1160,
+          "sha256": "2620bb438312fdaf370b2c39329b45c5817045db4d24f4de86faa5db38415c50",
+          "role": "problem",
+          "group": "mixed-baselines",
+          "caption": "A card heading and smaller actions are vertically centered, leaving their text baselines uneven."
+        },
+        {
+          "id": "fig-119-117",
+          "page": 119,
+          "path": "references/figures/fig-119-117.webp",
+          "width": 1440,
+          "height": 1160,
+          "sha256": "519c0ad010b96ce110e6a08af968f0ed37c8ca7a3de8c35b496ce27923f88a01",
+          "role": "before",
+          "group": "mixed-baselines",
+          "caption": "Moving the actions beside the larger heading exposes the mismatch caused by vertical centering."
+        },
+        {
+          "id": "fig-119-118",
+          "page": 119,
+          "path": "references/figures/fig-119-118.webp",
+          "width": 1440,
+          "height": 293,
+          "sha256": "d0992ee787b63e24e4b58c96cb485924f66b281958494fea22b1a37c8010b8cf",
+          "role": "diagram",
+          "group": "baseline",
+          "caption": "The word typography marks the common baseline beneath its letterforms."
+        },
+        {
+          "id": "fig-120-119",
+          "page": 120,
+          "path": "references/figures/fig-120-119.webp",
+          "width": 1440,
+          "height": 1160,
+          "sha256": "d5e9695b217dc28b6d18f3400425270d33ebf972c46eb4191908a7615d00cd26",
+          "role": "after",
+          "group": "mixed-baselines",
+          "caption": "Baseline alignment places the heading and smaller actions on a shared reading line."
+        }
+      ]
+    },
+    {
+      "id": "line-height-is-proportional",
+      "topic": "designing-text",
+      "title": "Line-height is proportional",
+      "page": 122,
+      "reference": "references/designing-text.md#line-height-is-proportional",
+      "when": "Body lines are hard to track, or a wrapped heading feels disconnected.",
+      "summary": "Adjust line-height to both line length and font size, usually giving small or wide body text more room.",
+      "caution": "Test actual glyphs and wrapping; tight headline leading must not clip accents or overlap lines.",
+      "tags": [
+        "line height",
+        "leading",
+        "paragraph",
+        "wrapped heading",
+        "readability"
+      ],
+      "featured_figures": [
+        "fig-124-123",
+        "fig-125-124"
+      ],
+      "figures": [
+        {
+          "id": "fig-122-120",
+          "page": 122,
+          "path": "references/figures/fig-122-120.webp",
+          "width": 1440,
+          "height": 789,
+          "sha256": "7e8448cd6c4793374abdb5e6b202b37fe069819150de116c80e9747d047ada65",
+          "role": "diagram",
+          "group": "line-height",
+          "caption": "A magnified paragraph relates 16 pixel text to a 24 pixel line-height."
+        },
+        {
+          "id": "fig-123-121",
+          "page": 123,
+          "path": "references/figures/fig-123-121.webp",
+          "width": 1440,
+          "height": 431,
+          "sha256": "f3355808cc9cea9435e6f64e9da1e1b5d7c00177e0fb346459743c572d972822",
+          "role": "problem",
+          "group": "line-tracking",
+          "caption": "Tight line-height in a long paragraph makes it hard to find the next line after wrapping."
+        },
+        {
+          "id": "fig-123-122",
+          "page": 123,
+          "path": "references/figures/fig-123-122.webp",
+          "width": 1440,
+          "height": 709,
+          "sha256": "543879ae4c6f78d54400d30e7bbcbdf0bbef2d05d7f0638eeb38e3b1ab68cd72",
+          "role": "comparison",
+          "group": "line-length-leading",
+          "caption": "A narrow paragraph uses less line-height than a wider paragraph."
+        },
+        {
+          "id": "fig-124-123",
+          "page": 124,
+          "path": "references/figures/fig-124-123.webp",
+          "width": 1440,
+          "height": 1247,
+          "sha256": "46980e602d44f17ce5797799e9f95e444f1de75851f581fca3904eab6594c8a0",
+          "role": "comparison",
+          "group": "body-leading",
+          "caption": "Increasing line-height opens dense small body copy and makes lines easier to follow."
+        },
+        {
+          "id": "fig-125-124",
+          "page": 125,
+          "path": "references/figures/fig-125-124.webp",
+          "width": 1440,
+          "height": 1067,
+          "sha256": "c7ad8cac70890ded554a5d9c9c2ba10ec473a41b3c72a4278d02912b70934045",
+          "role": "comparison",
+          "group": "headline-leading",
+          "caption": "Reducing headline line-height groups its large wrapped lines into a coherent heading."
+        }
+      ]
+    },
+    {
+      "id": "not-every-link-needs-a-color",
+      "topic": "designing-text",
+      "title": "Not every link needs a color",
+      "page": 126,
+      "reference": "references/designing-text.md#not-every-link-needs-a-color",
+      "when": "Repeated colored links overwhelm cards or navigation.",
+      "summary": "Establish hierarchy with weight and neutral tones where the component context already indicates interaction.",
+      "caution": "Keep links identifiable without hover, preserve keyboard focus, and distinguish inline prose links from surrounding text.",
+      "tags": [
+        "links",
+        "blue links",
+        "video cards",
+        "link heavy",
+        "hover"
+      ],
+      "featured_figures": [
+        "fig-126-126",
+        "fig-127-127"
+      ],
+      "figures": [
+        {
+          "id": "fig-126-125",
+          "page": 126,
+          "path": "references/figures/fig-126-125.webp",
+          "width": 1440,
+          "height": 588,
+          "sha256": "e4d7a6f28e4a9128ac7216f627dfde46677564efd15bf964473fc9705d01cc32",
+          "role": "example",
+          "group": "inline-links",
+          "caption": "Links in an article paragraph use underlines and color to distinguish them from surrounding prose."
+        },
+        {
+          "id": "fig-126-126",
+          "page": 126,
+          "path": "references/figures/fig-126-126.webp",
+          "width": 1440,
+          "height": 575,
+          "sha256": "7d23ddc16aadaf04b01d65d11869d3016a820a19cbd7ca0cd8dd34c6a27b065d",
+          "role": "before",
+          "group": "link-heavy-cards",
+          "caption": "Blue titles and author links compete across a row of video cards."
+        },
+        {
+          "id": "fig-127-127",
+          "page": 127,
+          "path": "references/figures/fig-127-127.webp",
+          "width": 1440,
+          "height": 575,
+          "sha256": "d3b814bc071ce36f767482254ce496390537c0bf7ea15abacad6894f060c1554",
+          "role": "after",
+          "group": "link-heavy-cards",
+          "caption": "Neutral bold titles establish hierarchy in the link-heavy video grid."
+        },
+        {
+          "id": "fig-127-128",
+          "page": 127,
+          "path": "references/figures/fig-127-128.webp",
+          "width": 1440,
+          "height": 575,
+          "sha256": "caf79dac76c43cb68f2401b70fc073057c7f9210c7bde58f8f27e90e49703396",
+          "role": "example",
+          "group": "ancillary-link-state",
+          "caption": "A secondary author link gains an underline on hover while the card titles retain emphasis."
+        }
+      ]
+    },
+    {
+      "id": "align-with-readability-in-mind",
+      "topic": "designing-text",
+      "title": "Align with readability in mind",
+      "page": 128,
+      "reference": "references/designing-text.md#align-with-readability-in-mind",
+      "when": "Long centered text or uneven numeric columns are hard to scan.",
+      "summary": "Align prose with its reading direction and numeric columns for comparison; keep centered text brief.",
+      "caution": "Account for RTL and locale-specific number formats. Justification needs careful hyphenation and language support.",
+      "tags": [
+        "alignment",
+        "centered text",
+        "table",
+        "numbers",
+        "decimals",
+        "justified",
+        "rtl"
+      ],
+      "featured_figures": [
+        "fig-129-131",
+        "fig-130-133"
+      ],
+      "figures": [
+        {
+          "id": "fig-128-129",
+          "page": 128,
+          "path": "references/figures/fig-128-129.webp",
+          "width": 1440,
+          "height": 462,
+          "sha256": "d6e0442c10611c3a44b567e1ad169cc5a0cd14fb49405667811231fffdb3260b",
+          "role": "example",
+          "group": "reading-alignment",
+          "caption": "A feed item aligns its name, role and paragraph to a shared left edge."
+        },
+        {
+          "id": "fig-128-130",
+          "page": 128,
+          "path": "references/figures/fig-128-130.webp",
+          "width": 1440,
+          "height": 367,
+          "sha256": "5ecb443a7ef1d308557b2878c920397cea4f5785575c9e0a54cec7b62396e8b4",
+          "role": "example",
+          "group": "short-centered-copy",
+          "caption": "Short descriptions sit centered beneath feature icons and headings."
+        },
+        {
+          "id": "fig-129-131",
+          "page": 129,
+          "path": "references/figures/fig-129-131.webp",
+          "width": 1440,
+          "height": 578,
+          "sha256": "c66f4a65fa4e69294a0964ffa7dee141cf7837332656cdab34e03953a3d69437",
+          "role": "comparison",
+          "group": "long-centered-copy",
+          "caption": "A long centered feature paragraph becomes easier to scan when left-aligned."
+        },
+        {
+          "id": "fig-129-132",
+          "page": 129,
+          "path": "references/figures/fig-129-132.webp",
+          "width": 1440,
+          "height": 725,
+          "sha256": "d2bf133bf79a32d928ae662e3d3b272c59cd4ec01e6b2a72a626edf95bb88419",
+          "role": "comparison",
+          "group": "shorten-centered-copy",
+          "caption": "Shortening a long feature description makes the centered row more balanced."
+        },
+        {
+          "id": "fig-130-133",
+          "page": 130,
+          "path": "references/figures/fig-130-133.webp",
+          "width": 1440,
+          "height": 640,
+          "sha256": "9cae449b15474e709a8cb495adc9abfd607c48ce7c535f9e7c413461d1c27fc6",
+          "role": "comparison",
+          "group": "numeric-alignment",
+          "caption": "Right-aligned stock prices and changes make magnitudes easier to compare down table columns."
+        },
+        {
+          "id": "fig-130-134",
+          "page": 130,
+          "path": "references/figures/fig-130-134.webp",
+          "width": 1440,
+          "height": 439,
+          "sha256": "42476dfb3efee683ac3e2a32123611425a434e26e78d47a90f4ee8c89feb2d91",
+          "role": "before",
+          "group": "justified-copy",
+          "caption": "Justified text without hyphenation produces large irregular spaces between words."
+        },
+        {
+          "id": "fig-131-135",
+          "page": 131,
+          "path": "references/figures/fig-131-135.webp",
+          "width": 1440,
+          "height": 438,
+          "sha256": "3e418e65d23893a9153d15e9f3a2e6fef84e632862075a9aab8d92a1e4fb3511",
+          "role": "after",
+          "group": "justified-copy",
+          "caption": "Hyphenation reduces the large gaps in the justified paragraph."
+        }
+      ]
+    },
+    {
+      "id": "use-letter-spacing-effectively",
+      "topic": "designing-text",
+      "title": "Use letter-spacing effectively",
+      "page": 132,
+      "reference": "references/designing-text.md#use-letter-spacing-effectively",
+      "when": "Headlines feel loose or all-caps labels feel crowded.",
+      "summary": "Keep body tracking near the typeface default, testing tighter headlines or wider uppercase text when useful.",
+      "caution": "Tracking adjustments are font- and script-dependent; do not apply Latin uppercase habits universally.",
+      "tags": [
+        "letter spacing",
+        "tracking",
+        "uppercase",
+        "all caps",
+        "headline"
+      ],
+      "featured_figures": [
+        "fig-133-138",
+        "fig-134-140"
+      ],
+      "figures": [
+        {
+          "id": "fig-132-136",
+          "page": 132,
+          "path": "references/figures/fig-132-136.webp",
+          "width": 1440,
+          "height": 1178,
+          "sha256": "48499b7c7179bfd8008f9d5f1cb9e835e699c5eb186acc7ddbe9866b572b85d0",
+          "role": "comparison",
+          "group": "tracking-defaults",
+          "caption": "The same paragraph compares tight, normal and wide letter-spacing."
+        },
+        {
+          "id": "fig-133-137",
+          "page": 133,
+          "path": "references/figures/fig-133-137.webp",
+          "width": 1440,
+          "height": 480,
+          "sha256": "bffa118cf6c5d5d6f92bd92f51a99fb19e65624a000084db080ea0aaf927a8e0",
+          "role": "comparison",
+          "group": "headline-fonts",
+          "caption": "Open Sans and Oswald show different spacing and proportions in the same headline."
+        },
+        {
+          "id": "fig-133-138",
+          "page": 133,
+          "path": "references/figures/fig-133-138.webp",
+          "width": 1440,
+          "height": 480,
+          "sha256": "a2995eb958d4492e30e21abe28a15e627cc0fcaf0dc04e87298bea3f53954780",
+          "role": "comparison",
+          "group": "headline-tracking",
+          "caption": "Slightly tighter tracking makes a large Open Sans headline more compact."
+        },
+        {
+          "id": "fig-134-139",
+          "page": 134,
+          "path": "references/figures/fig-134-139.webp",
+          "width": 1440,
+          "height": 276,
+          "sha256": "8214f9e62681950f47ea34cc5446ca030b5ca629a612fef6d45d87861dd36997",
+          "role": "diagram",
+          "group": "letter-shapes",
+          "caption": "A typography diagram marks ascenders, x-height, baseline and descenders."
+        },
+        {
+          "id": "fig-134-140",
+          "page": 134,
+          "path": "references/figures/fig-134-140.webp",
+          "width": 1440,
+          "height": 370,
+          "sha256": "dbbf1908b911114fb3f3b418da5e88a8ae8d118849f2f16dc173b6d2f0beeb2f",
+          "role": "comparison",
+          "group": "uppercase-tracking",
+          "caption": "Wider letter-spacing improves separation in an all-caps role label."
+        }
+      ]
+    },
+    {
+      "id": "ditch-hex-for-hsl",
+      "topic": "working-with-color",
+      "title": "Ditch hex for HSL",
+      "page": 138,
+      "reference": "references/working-with-color.md#ditch-hex-for-hsl",
+      "when": "Related colors are difficult to reason about when editing raw color values.",
+      "summary": "Use a color model that exposes useful relationships and retain the project's palette format.",
+      "caution": "HSL explains the examples; it is not mandatory. Preserve an existing OKLCH or other color workflow.",
+      "tags": [
+        "hsl",
+        "hex",
+        "rgb",
+        "oklch",
+        "color model",
+        "palette"
+      ],
+      "featured_figures": [
+        "fig-138-141",
+        "fig-138-142"
+      ],
+      "figures": [
+        {
+          "id": "fig-138-141",
+          "page": 138,
+          "path": "references/figures/fig-138-141.webp",
+          "width": 1440,
+          "height": 440,
+          "sha256": "ed26092a655a2425806e77adaaa322799cf4113b9769c23278efa8c2f5211b2a",
+          "role": "diagram",
+          "group": "color-notation",
+          "caption": "A task donut chart labels three related blue shades with opaque hexadecimal values."
+        },
+        {
+          "id": "fig-138-142",
+          "page": 138,
+          "path": "references/figures/fig-138-142.webp",
+          "width": 1440,
+          "height": 441,
+          "sha256": "c6ca572f295b5a2ff3e4fcae6650480f17e05561fdb725605a41545edf25b44a",
+          "role": "diagram",
+          "group": "color-notation",
+          "caption": "The same chart labels its shades with HSL values, exposing their shared hue and differing lightness."
+        },
+        {
+          "id": "fig-139-143",
+          "page": 139,
+          "path": "references/figures/fig-139-143.webp",
+          "width": 1440,
+          "height": 670,
+          "sha256": "2e1bbefb2d12fa11d4a121fe78b6846cc05f7286cf21852c00a48133fb917241",
+          "role": "diagram",
+          "group": "hsl-hue",
+          "caption": "An HSL hue wheel labels the angles of red, yellow, green, cyan, blue and magenta."
+        },
+        {
+          "id": "fig-139-144",
+          "page": 139,
+          "path": "references/figures/fig-139-144.webp",
+          "width": 1440,
+          "height": 320,
+          "sha256": "0347f38b8e7d22f207dabc9ce2c6b37fa7017330be3ed4a831c0e44162d8d8f3",
+          "role": "diagram",
+          "group": "hsl-saturation",
+          "caption": "A blue ramp varies saturation from grey to vivid while holding hue and lightness constant."
+        },
+        {
+          "id": "fig-139-145",
+          "page": 139,
+          "path": "references/figures/fig-139-145.webp",
+          "width": 1440,
+          "height": 301,
+          "sha256": "485f4e8456999bfe34f37cf8c9b8e372f2a26fec52c1e755d94327986101d590",
+          "role": "diagram",
+          "group": "hsl-saturation",
+          "caption": "Blue and pink become the same grey when HSL saturation reaches zero at equal lightness."
+        },
+        {
+          "id": "fig-140-146",
+          "page": 140,
+          "path": "references/figures/fig-140-146.webp",
+          "width": 1440,
+          "height": 320,
+          "sha256": "ee57d90f2f80690943a419c2250a3fb1f76ec57ac119887eb163b680f614ffc6",
+          "role": "diagram",
+          "group": "hsl-lightness",
+          "caption": "A blue ramp varies HSL lightness from black through vivid blue to white."
+        },
+        {
+          "id": "fig-140-147",
+          "page": 140,
+          "path": "references/figures/fig-140-147.webp",
+          "width": 1440,
+          "height": 702,
+          "sha256": "b18fc3e83cfee17489e8e2a110810afdc76bb888dc9910535501631a8c1a614e",
+          "role": "comparison",
+          "group": "hsl-hsb",
+          "caption": "HSB and HSL color-picker planes place a vivid blue at different vertical positions."
+        }
+      ]
+    },
+    {
+      "id": "you-need-more-colors-than-you-think",
+      "topic": "working-with-color",
+      "title": "You need more colors than you think",
+      "page": 142,
+      "reference": "references/working-with-color.md#you-need-more-colors-than-you-think",
+      "when": "A small palette cannot support readable text, surfaces and semantic states.",
+      "summary": "Provide tonal ranges for neutrals, brand colors and the accent roles the product actually needs.",
+      "caution": "Do not create unused palette families or overwhelm the interface with saturated colors.",
+      "tags": [
+        "palette",
+        "shades",
+        "neutrals",
+        "status",
+        "semantic colors",
+        "too colorful"
+      ],
+      "featured_figures": [
+        "fig-142-149",
+        "fig-143-150"
+      ],
+      "figures": [
+        {
+          "id": "fig-142-148",
+          "page": 142,
+          "path": "references/figures/fig-142-148.webp",
+          "width": 1440,
+          "height": 117,
+          "sha256": "2b9e130d1a3a8046bbded50d0f6cb2288827d7cbdc38288c4cd05857016cde0e",
+          "role": "problem",
+          "group": "five-color-palette",
+          "caption": "A five-swatch palette has no tonal range for backgrounds, text and component states."
+        },
+        {
+          "id": "fig-142-149",
+          "page": 142,
+          "path": "references/figures/fig-142-149.webp",
+          "width": 1440,
+          "height": 966,
+          "sha256": "c0cd3d56d102db16f88a1e1f94ab37dc315bfc528b400cfa9de5f2fad26150ff",
+          "role": "before",
+          "group": "app-palette",
+          "caption": "A chat interface restricted to saturated palette colors becomes loud and hard to read."
+        },
+        {
+          "id": "fig-143-150",
+          "page": 143,
+          "path": "references/figures/fig-143-150.webp",
+          "width": 1440,
+          "height": 1282,
+          "sha256": "594089acf858c6e6ad19a6b3282cfe7b6847e34f2befede09dfd3eea1adbea32",
+          "role": "after",
+          "group": "app-palette",
+          "caption": "The chat interface adds neutrals and tonal shades for calmer surfaces, readable text and distinct states."
+        },
+        {
+          "id": "fig-144-151",
+          "page": 144,
+          "path": "references/figures/fig-144-151.webp",
+          "width": 1440,
+          "height": 888,
+          "sha256": "1feb8155bf5f451f6eeb8229eaa1b759a002532858940591816d1b14f130dfa6",
+          "role": "example",
+          "group": "neutral-roles",
+          "caption": "A settings form assigns different grey shades to primary text, supporting text, borders and surfaces."
+        },
+        {
+          "id": "fig-144-152",
+          "page": 144,
+          "path": "references/figures/fig-144-152.webp",
+          "width": 1440,
+          "height": 234,
+          "sha256": "38b55342d763954e5a2ce7323761ca1b77512597ecdd4bbd6de0d56ea31e37d4",
+          "role": "example",
+          "group": "neutral-ramp",
+          "caption": "A broad neutral ramp spans near-black through near-white."
+        },
+        {
+          "id": "fig-145-153",
+          "page": 145,
+          "path": "references/figures/fig-145-153.webp",
+          "width": 1440,
+          "height": 432,
+          "sha256": "9053ac604339deb1644bfc95af343ef9c1d27342aed6eaf85ce62fc9a2b96e79",
+          "role": "example",
+          "group": "primary-ramp",
+          "caption": "A blue ramp supports a progress indicator, tooltip, icons and primary action."
+        },
+        {
+          "id": "fig-145-154",
+          "page": 145,
+          "path": "references/figures/fig-145-154.webp",
+          "width": 1440,
+          "height": 312,
+          "sha256": "fef9ca2ec17d3d0d1a7cecf35ea6bb4a306b674a27d02a8e2da04ace179110bd",
+          "role": "example",
+          "group": "accent-ramp",
+          "caption": "A teal ramp supplies the subtle New badge in a navigation bar."
+        },
+        {
+          "id": "fig-146-155",
+          "page": 146,
+          "path": "references/figures/fig-146-155.webp",
+          "width": 1440,
+          "height": 658,
+          "sha256": "1a3ddcdbc18fd247ab0f931f9c1a12564332a9f9fcc79964a0ecc1d8690e7319",
+          "role": "example",
+          "group": "danger-ramp",
+          "caption": "Red shades serve an icon, accent border and tinted destructive button in a deactivation dialog."
+        },
+        {
+          "id": "fig-146-156",
+          "page": 146,
+          "path": "references/figures/fig-146-156.webp",
+          "width": 1440,
+          "height": 357,
+          "sha256": "c3b2ca0f77b979e954d43cfdc075873978d3d512cc3d6c978ceceea13a6de929",
+          "role": "example",
+          "group": "warning-ramp",
+          "caption": "Yellow shades provide dark warning text, a pale background and a visible alert icon."
+        },
+        {
+          "id": "fig-146-157",
+          "page": 146,
+          "path": "references/figures/fig-146-157.webp",
+          "width": 1440,
+          "height": 340,
+          "sha256": "c045f6571fffc9c30c53f2ae78a586d3bf58c75aa15dc4626b41d511e3e47b12",
+          "role": "example",
+          "group": "positive-ramp",
+          "caption": "Green shades support a positive stock trend, sparkline and tinted change badge."
+        }
+      ]
+    },
+    {
+      "id": "define-your-shades-up-front",
+      "topic": "working-with-color",
+      "title": "Define your shades up front",
+      "page": 148,
+      "reference": "references/working-with-color.md#define-your-shades-up-front",
+      "when": "Components accumulate slightly different ad hoc lightened and darkened colors.",
+      "summary": "Choose useful dark, middle and light anchors, fill a stable shade scale, and name semantic roles.",
+      "caution": "Judge shades in real components and both supported themes; the displayed base shade is not a contrast guarantee.",
+      "tags": [
+        "shade scale",
+        "palette",
+        "tokens",
+        "ad hoc colors",
+        "color consistency"
+      ],
+      "featured_figures": [
+        "fig-149-160",
+        "fig-150-161",
+        "fig-150-162",
+        "fig-150-163"
+      ],
+      "figures": [
+        {
+          "id": "fig-148-158",
+          "page": 148,
+          "path": "references/figures/fig-148-158.webp",
+          "width": 1440,
+          "height": 701,
+          "sha256": "7b250a8d6b2a18ca238ae99d8aa127a5ef3972f1c522bdbdd1c0a67b206f4914",
+          "role": "diagram",
+          "group": "palette-families",
+          "caption": "Primary, neutral and accent families each contain multiple tonal shades."
+        },
+        {
+          "id": "fig-149-159",
+          "page": 149,
+          "path": "references/figures/fig-149-159.webp",
+          "width": 1440,
+          "height": 304,
+          "sha256": "29ff5928577c213c78153e416e2cdabec4d0f2f3607ad0ecd2aefa920fffcd96",
+          "role": "comparison",
+          "group": "base-shade",
+          "caption": "Three action buttons compare candidate base shades from too dark to too light."
+        },
+        {
+          "id": "fig-149-160",
+          "page": 149,
+          "path": "references/figures/fig-149-160.webp",
+          "width": 1440,
+          "height": 336,
+          "sha256": "2172e204dfe453d1b0551f46e33ad6ca9c93608f69b13fe32cd8397e8cb01433",
+          "role": "example",
+          "group": "palette-endpoints",
+          "caption": "An alert exercises a palette's dark text and light background endpoints."
+        },
+        {
+          "id": "fig-150-161",
+          "page": 150,
+          "path": "references/figures/fig-150-161.webp",
+          "width": 1440,
+          "height": 126,
+          "sha256": "a53e8c86daedd2b95d3eea93c6acdbd0d314f6e6691522e3111958d40eb735d9",
+          "role": "diagram",
+          "group": "shade-interpolation",
+          "caption": "A nine-slot palette starts with dark 900, base 500 and light 100 anchors."
+        },
+        {
+          "id": "fig-150-162",
+          "page": 150,
+          "path": "references/figures/fig-150-162.webp",
+          "width": 1440,
+          "height": 125,
+          "sha256": "18096a071f2356cfa55b49838af48a569a7df4b6cf55c7f7c3d922ef416544dc",
+          "role": "diagram",
+          "group": "shade-interpolation",
+          "caption": "Intermediate 700 and 300 shades split the gaps between the initial anchors."
+        },
+        {
+          "id": "fig-150-163",
+          "page": 150,
+          "path": "references/figures/fig-150-163.webp",
+          "width": 1440,
+          "height": 126,
+          "sha256": "f952f927c5f4d8005588a2139a4662518de7c7726f980a0401c32bfd14731686",
+          "role": "diagram",
+          "group": "shade-interpolation",
+          "caption": "The remaining gaps are filled to complete a nine-step color palette."
+        },
+        {
+          "id": "fig-151-164",
+          "page": 151,
+          "path": "references/figures/fig-151-164.webp",
+          "width": 1440,
+          "height": 126,
+          "sha256": "07547e0bc59508fc170b5092c0d22e336fe7a40137c91774fcf90ca94c2e542b",
+          "role": "example",
+          "group": "neutral-shades",
+          "caption": "A nine-step blue-grey ramp applies the same palette-building process to neutrals."
+        }
+      ]
+    },
+    {
+      "id": "dont-let-lightness-kill-your-saturation",
+      "topic": "working-with-color",
+      "title": "Don’t let lightness kill your saturation",
+      "page": 152,
+      "reference": "references/working-with-color.md#dont-let-lightness-kill-your-saturation",
+      "when": "Light and dark palette shades look washed out or muddy.",
+      "summary": "Adjust saturation or chroma and sometimes hue while shaping the tonal range.",
+      "caution": "The HSL brightness approximation shown in the examples is not WCAG relative luminance. HSL hue offsets do not transfer directly to OKLCH.",
+      "tags": [
+        "washed out",
+        "muddy",
+        "saturation",
+        "chroma",
+        "hue",
+        "gradient"
+      ],
+      "featured_figures": [
+        "fig-156-175"
+      ],
+      "figures": [
+        {
+          "id": "fig-152-165",
+          "page": 152,
+          "path": "references/figures/fig-152-165.webp",
+          "width": 1440,
+          "height": 506,
+          "sha256": "c2e9b9ca8fe13a6f55143bd0d304bfd980e18368f372159adf2b8fb2e77573da",
+          "role": "diagram",
+          "group": "saturation-compensation",
+          "caption": "A blue palette keeps saturation constant across a range of HSL lightness values."
+        },
+        {
+          "id": "fig-152-166",
+          "page": 152,
+          "path": "references/figures/fig-152-166.webp",
+          "width": 1440,
+          "height": 507,
+          "sha256": "3f3bd36fcdc2a3098661ec660d218b162e14e14358c8ea6bb012f3a5e061b748",
+          "role": "diagram",
+          "group": "saturation-compensation",
+          "caption": "Raising saturation toward the light and dark endpoints keeps the blue palette more vivid."
+        },
+        {
+          "id": "fig-153-167",
+          "page": 153,
+          "path": "references/figures/fig-153-167.webp",
+          "width": 1440,
+          "height": 157,
+          "sha256": "251358325b2ac7bed1dba12ecc3a6d5c8cc4098e6141502b42d48d7edc280f8f",
+          "role": "comparison",
+          "group": "perceived-brightness",
+          "caption": "Pure yellow appears much brighter than pure blue."
+        },
+        {
+          "id": "fig-153-168",
+          "page": 153,
+          "path": "references/figures/fig-153-168.webp",
+          "width": 1440,
+          "height": 176,
+          "sha256": "c6921e79fd904b8895f719b257a898d87b2253eecf6b8e4417fbdfe7105bdfc8",
+          "role": "diagram",
+          "group": "perceived-brightness",
+          "caption": "Yellow and blue have identical HSL saturation and lightness despite different perceived brightness."
+        },
+        {
+          "id": "fig-153-169",
+          "page": 153,
+          "path": "references/figures/fig-153-169.webp",
+          "width": 1440,
+          "height": 272,
+          "sha256": "70c7dbfa33e99c3194c428e45c8a809c45f49b102e51bbde6e3ef77979734500",
+          "role": "diagram",
+          "group": "brightness-formula",
+          "caption": "The weighted RGB brightness approximation illustrates perceived brightness; it is not the WCAG contrast formula."
+        },
+        {
+          "id": "fig-154-170",
+          "page": 154,
+          "path": "references/figures/fig-154-170.webp",
+          "width": 1440,
+          "height": 938,
+          "sha256": "9b2aa8cbf06452852de9714e55ad677ceea8127ff930ccb3ca6195d58d738050",
+          "role": "diagram",
+          "group": "hue-brightness",
+          "caption": "A hue-versus-brightness plot shows yellow and cyan peaks and a deep blue trough."
+        },
+        {
+          "id": "fig-155-171",
+          "page": 155,
+          "path": "references/figures/fig-155-171.webp",
+          "width": 1440,
+          "height": 331,
+          "sha256": "40f804040fadabd6297c9327f2e5569bf7eaaf4b5e99d641269438732c9e52ee",
+          "role": "diagram",
+          "group": "lightness-only",
+          "caption": "Three fully saturated blue swatches vary only in HSL lightness."
+        },
+        {
+          "id": "fig-155-172",
+          "page": 155,
+          "path": "references/figures/fig-155-172.webp",
+          "width": 1440,
+          "height": 274,
+          "sha256": "82c15c34e022ad54a8f7220d1cb66f251380550526ce95f4506a1b8f876e0a0d",
+          "role": "example",
+          "group": "blue-gradient",
+          "caption": "A blue play icon uses a pale-to-vivid gradient created by changing lightness."
+        },
+        {
+          "id": "fig-155-173",
+          "page": 155,
+          "path": "references/figures/fig-155-173.webp",
+          "width": 1440,
+          "height": 273,
+          "sha256": "a3ee1b3f691fb2886fae20958888a032b14bdd80c8d68c1008b51607a1800484",
+          "role": "example",
+          "group": "blue-gradient",
+          "caption": "A cyan-to-blue hue shift keeps the play icon's gradient vivid."
+        },
+        {
+          "id": "fig-156-174",
+          "page": 156,
+          "path": "references/figures/fig-156-174.webp",
+          "width": 1440,
+          "height": 273,
+          "sha256": "83358a0ffe0e07387f7854444b8e5c8d18a02de965e371f68b163fe597990f6f",
+          "role": "example",
+          "group": "warm-gradient",
+          "caption": "A yellow-to-orange hue shift creates a warm vivid gradient on a play icon."
+        },
+        {
+          "id": "fig-156-175",
+          "page": 156,
+          "path": "references/figures/fig-156-175.webp",
+          "width": 1440,
+          "height": 273,
+          "sha256": "6e5cefcb75b667cb92377a606b63b33a895465dd8c1e02e2b5001f918769720a",
+          "role": "comparison",
+          "group": "yellow-shades",
+          "caption": "Rotating darker yellow shades toward orange avoids the muddy olive appearance of lightness-only shades."
+        },
+        {
+          "id": "fig-156-176",
+          "page": 156,
+          "path": "references/figures/fig-156-176.webp",
+          "width": 1440,
+          "height": 546,
+          "sha256": "da08ca78aa68747c00e740a98de1937df60c6b04fe9f0fb581b07bdce3ed354c",
+          "role": "example",
+          "group": "tinted-testimonial",
+          "caption": "Light cyan attribution text sits on a dark blue testimonial panel."
+        }
+      ]
+    },
+    {
+      "id": "greys-dont-have-to-be-grey",
+      "topic": "working-with-color",
+      "title": "Greys don’t have to be grey",
+      "page": 158,
+      "reference": "references/working-with-color.md#greys-dont-have-to-be-grey",
+      "when": "Neutral surfaces feel disconnected from the intended warm or cool personality.",
+      "summary": "Use a coherent, subtly tinted neutral ramp when it serves the design.",
+      "caution": "Neutral greys and black are valid choices; preserve the existing brand and measure text contrast.",
+      "tags": [
+        "grey",
+        "gray",
+        "neutral",
+        "warm",
+        "cool",
+        "tint"
+      ],
+      "featured_figures": [
+        "fig-159-179",
+        "fig-159-180"
+      ],
+      "figures": [
+        {
+          "id": "fig-158-177",
+          "page": 158,
+          "path": "references/figures/fig-158-177.webp",
+          "width": 1440,
+          "height": 320,
+          "sha256": "d33ca76ff0ed49746c9b66e74eb366726c79b2c80286b11a974aec309aeff49f",
+          "role": "diagram",
+          "group": "neutral-grey",
+          "caption": "A zero-saturation ramp runs from black to white."
+        },
+        {
+          "id": "fig-158-178",
+          "page": 158,
+          "path": "references/figures/fig-158-178.webp",
+          "width": 1440,
+          "height": 701,
+          "sha256": "0c0b9e0252a2b606f1b7abc631b1611775743d7ef4b9e16cfd4f541c79679bfd",
+          "role": "example",
+          "group": "cool-interface",
+          "caption": "An invoice dashboard uses blue-tinted greys for text, panels and page background."
+        },
+        {
+          "id": "fig-159-179",
+          "page": 159,
+          "path": "references/figures/fig-159-179.webp",
+          "width": 1440,
+          "height": 787,
+          "sha256": "238ed85132ed77a3b8765dbfe2c4b5a852d2b624b6f059ca77aef4bbd98e7382",
+          "role": "comparison",
+          "group": "grey-temperature",
+          "caption": "Neutral and blue-tinted grey ramps show how small amounts of saturation create a cooler palette."
+        },
+        {
+          "id": "fig-159-180",
+          "page": 159,
+          "path": "references/figures/fig-159-180.webp",
+          "width": 1440,
+          "height": 324,
+          "sha256": "8a7b302371dcbdedc7a54d13de606aa2ced5838f50f76f4d9270a5fd8d2e04fa",
+          "role": "example",
+          "group": "grey-temperature",
+          "caption": "A warm grey ramp uses yellow-orange hues with adjusted saturation across shades."
+        }
+      ]
+    },
+    {
+      "id": "accessible-doesnt-have-to-mean-ugly",
+      "topic": "working-with-color",
+      "title": "Accessible doesn’t have to mean ugly",
+      "page": 162,
+      "reference": "references/working-with-color.md#accessible-doesnt-have-to-mean-ugly",
+      "when": "Readable status colors become too visually heavy, or colored text loses its character.",
+      "summary": "Try dark colored text on a light tint, checking actual foreground-background contrast.",
+      "caution": "Normal text needs 4.5:1; large text needs 3:1 at 18pt/24px regular or 14pt/about 18.67px bold. Do not round a failing ratio up.",
+      "tags": [
+        "accessibility",
+        "contrast",
+        "badges",
+        "status",
+        "aa",
+        "wcag",
+        "readable colors",
+        "chips",
+        "pills",
+        "tags",
+        "badge colors"
+      ],
+      "featured_figures": [
+        "fig-163-182",
+        "fig-163-183",
+        "fig-164-184"
+      ],
+      "figures": [
+        {
+          "id": "fig-162-181",
+          "page": 162,
+          "path": "references/figures/fig-162-181.webp",
+          "width": 1440,
+          "height": 1100,
+          "sha256": "205f30c15934daad699e8b9b0bccd36c8f3723c1bb834ad89f6dac141d7962fb",
+          "role": "diagram",
+          "group": "contrast-levels",
+          "caption": "A table compares normal and large text examples with contrast ratios and AA or AAA grades."
+        },
+        {
+          "id": "fig-163-182",
+          "page": 163,
+          "path": "references/figures/fig-163-182.webp",
+          "width": 1440,
+          "height": 663,
+          "sha256": "a1989b2caa6a43891cd32d000b19fc35582623d1cbcb5367bbb1351b30c76595",
+          "role": "before",
+          "group": "status-contrast",
+          "caption": "White text on bright green, yellow and pink status badges is marked as failing contrast."
+        },
+        {
+          "id": "fig-163-183",
+          "page": 163,
+          "path": "references/figures/fig-163-183.webp",
+          "width": 1440,
+          "height": 663,
+          "sha256": "8a8ab32253a3b265f80771b64feadc17e718c0070bb8ad139581b6cc09c3b291",
+          "role": "example",
+          "group": "status-contrast",
+          "caption": "Darkening badge fills improves the displayed contrast ratios but makes statuses visually heavy."
+        },
+        {
+          "id": "fig-164-184",
+          "page": 164,
+          "path": "references/figures/fig-164-184.webp",
+          "width": 1440,
+          "height": 662,
+          "sha256": "478899188933b5a6acfe50e89bb1d9b156f1a8f000ed5fb3b523444d5bb25e2d",
+          "role": "after",
+          "group": "status-contrast",
+          "caption": "Dark colored text on pale status fills provides strong contrast with quieter visual emphasis."
+        },
+        {
+          "id": "fig-165-185",
+          "page": 165,
+          "path": "references/figures/fig-165-185.webp",
+          "width": 1440,
+          "height": 625,
+          "sha256": "e3b8c732c304d017c7aa3c52e300c220236e4ce9a7b1f565826c746375f460ef",
+          "role": "before",
+          "group": "colored-panel-contrast",
+          "caption": "Very pale secondary text on a purple support panel meets the shown contrast target but loses much of its color."
+        },
+        {
+          "id": "fig-165-186",
+          "page": 165,
+          "path": "references/figures/fig-165-186.webp",
+          "width": 1440,
+          "height": 626,
+          "sha256": "1e40bdd34f4d0ae0f5e9cf722bf3faa11338a45e0c6cae34cf09d56d682e1f3d",
+          "role": "after",
+          "group": "colored-panel-contrast",
+          "caption": "Cyan secondary text retains color on the same purple panel while meeting the shown contrast target."
+        }
+      ]
+    },
+    {
+      "id": "dont-rely-on-color-alone",
+      "topic": "working-with-color",
+      "title": "Don’t rely on color alone",
+      "page": 166,
+      "reference": "references/working-with-color.md#dont-rely-on-color-alone",
+      "when": "Trends, statuses or chart categories are distinguishable only by hue.",
+      "summary": "Pair color with labels, signs, icons, patterns or another independent signal.",
+      "caution": "Lightness differences help but do not alone identify every chart series; preserve labels and values.",
+      "tags": [
+        "colorblind",
+        "color blindness",
+        "chart",
+        "status",
+        "trend",
+        "red green",
+        "accessibility"
+      ],
+      "featured_figures": [
+        "fig-166-187",
+        "fig-167-188"
+      ],
+      "figures": [
+        {
+          "id": "fig-166-187",
+          "page": 166,
+          "path": "references/figures/fig-166-187.webp",
+          "width": 1440,
+          "height": 1036,
+          "sha256": "af2d25900ad55bae76b105a250e3cacaf6fb7e1c58af8e5f4e411904a2247bb2",
+          "role": "before",
+          "group": "trend-color-only",
+          "caption": "Revenue badges encode direction only with red and green, which converge in a color-vision simulation."
+        },
+        {
+          "id": "fig-167-188",
+          "page": 167,
+          "path": "references/figures/fig-167-188.webp",
+          "width": 1440,
+          "height": 456,
+          "sha256": "0270954f46a6f4a73ce8a0df0bdedfc8db2bd0d9e9837882d1d0bc4c832a500b",
+          "role": "after",
+          "group": "trend-color-only",
+          "caption": "Up and down arrows make the revenue direction explicit in addition to color."
+        },
+        {
+          "id": "fig-167-189",
+          "page": 167,
+          "path": "references/figures/fig-167-189.webp",
+          "width": 1440,
+          "height": 1022,
+          "sha256": "1fbd57d7f2ebd6cfaf4913ab51d3922754830adbc07b96c7217a335773d06cd0",
+          "role": "before",
+          "group": "chart-series-contrast",
+          "caption": "Donut-chart hues become difficult to distinguish in a blue-yellow color-vision simulation."
+        },
+        {
+          "id": "fig-168-190",
+          "page": 168,
+          "path": "references/figures/fig-168-190.webp",
+          "width": 1440,
+          "height": 1022,
+          "sha256": "5c15eecab39893b073c10e5a590650fa187db449dda449f0c3e39a28bb6b7c54",
+          "role": "after",
+          "group": "chart-series-contrast",
+          "caption": "Different lightness levels keep the donut segments more distinct in the simulation."
+        }
+      ]
+    },
+    {
+      "id": "emulate-a-light-source",
+      "topic": "creating-depth",
+      "title": "Emulate a light source",
+      "page": 172,
+      "reference": "references/creating-depth.md#emulate-a-light-source",
+      "when": "Raised and inset controls feel flat or their light cues contradict each other.",
+      "summary": "Use a consistent implied light direction with restrained edge highlights and shadows.",
+      "caution": "Depth is optional and should suit the established visual style; avoid decorative cues that imply nonexistent controls.",
+      "tags": [
+        "inset",
+        "raised",
+        "light source",
+        "depth",
+        "bevel",
+        "controls"
+      ],
+      "featured_figures": [
+        "fig-176-197",
+        "fig-176-198"
+      ],
+      "figures": [
+        {
+          "id": "fig-172-191",
+          "page": 172,
+          "path": "references/figures/fig-172-191.webp",
+          "width": 1440,
+          "height": 1250,
+          "sha256": "7403bfac83940b89d49e81cc1e72b478dbdff474df10fb7900a31d945de1a2c0",
+          "role": "example",
+          "group": "raised-inset-controls",
+          "caption": "Property filters combine raised selects with inset checkboxes and a recessed range track."
+        },
+        {
+          "id": "fig-173-192",
+          "page": 173,
+          "path": "references/figures/fig-173-192.webp",
+          "width": 1440,
+          "height": 523,
+          "sha256": "1d3e7bcecdf7bf8a6e3c0ee4ab44a0529a186c26c1e7a03f006b78b79c4ef3f3",
+          "role": "example",
+          "group": "raised-real-world",
+          "caption": "A blue paneled door shows highlights on raised top edges and shadows below."
+        },
+        {
+          "id": "fig-173-193",
+          "page": 173,
+          "path": "references/figures/fig-173-193.webp",
+          "width": 1440,
+          "height": 505,
+          "sha256": "6a31183fe5372757155530ad732fbca1511545f882329f3e0abb06f5e231d960",
+          "role": "diagram",
+          "group": "raised-light",
+          "caption": "A side profile shows overhead light hitting a raised top edge more strongly than its lower edge."
+        },
+        {
+          "id": "fig-174-194",
+          "page": 174,
+          "path": "references/figures/fig-174-194.webp",
+          "width": 1440,
+          "height": 796,
+          "sha256": "464e51835a4042c5b4a2ef2c27edc1cfff781354972d11aea7145fe30a2227c5",
+          "role": "example",
+          "group": "inset-real-world",
+          "caption": "Recessed cabinet panels show shadows near the top and highlights at the bottom."
+        },
+        {
+          "id": "fig-174-195",
+          "page": 174,
+          "path": "references/figures/fig-174-195.webp",
+          "width": 1440,
+          "height": 505,
+          "sha256": "8cc2989af34fc9acbf40b268940b416e25c06af124c7e74cb24c1ec348955bf0",
+          "role": "diagram",
+          "group": "inset-light",
+          "caption": "A recessed side profile shows the top lip blocking light and the lower edge receiving it."
+        },
+        {
+          "id": "fig-175-196",
+          "page": 175,
+          "path": "references/figures/fig-175-196.webp",
+          "width": 1440,
+          "height": 912,
+          "sha256": "0a4d177f1854d2dce076a883286e20b20332e722482b753c2296fd35fd012b08",
+          "role": "diagram",
+          "group": "raised-button",
+          "caption": "A flat Create Account button is paired with the raised profile it should suggest."
+        },
+        {
+          "id": "fig-176-197",
+          "page": 176,
+          "path": "references/figures/fig-176-197.webp",
+          "width": 1440,
+          "height": 475,
+          "sha256": "aae8d0e0bbbd7f5dc9dcdb4eaa6b4a895678962787c9746b0b17396562ad0061",
+          "role": "comparison",
+          "group": "raised-button",
+          "caption": "A subtle light top edge makes the button read as raised."
+        },
+        {
+          "id": "fig-176-198",
+          "page": 176,
+          "path": "references/figures/fig-176-198.webp",
+          "width": 1440,
+          "height": 476,
+          "sha256": "b7e5d1cf15aecb5bdd568d5cea7e9e9db7a402cf24db00362c10ffbe51d3fcc6",
+          "role": "comparison",
+          "group": "raised-button",
+          "caption": "A small shadow below the button completes its raised appearance."
+        },
+        {
+          "id": "fig-177-199",
+          "page": 177,
+          "path": "references/figures/fig-177-199.webp",
+          "width": 1440,
+          "height": 553,
+          "sha256": "3c26872951854052df6731088b381357826072b371c89481b0ec7825de63511e",
+          "role": "diagram",
+          "group": "inset-upload",
+          "caption": "A flat upload target is paired with the recessed profile it should suggest."
+        },
+        {
+          "id": "fig-177-200",
+          "page": 177,
+          "path": "references/figures/fig-177-200.webp",
+          "width": 1440,
+          "height": 554,
+          "sha256": "550b42693f8b5c8f9a1c1723ec21d4a4c8af05ffbabc5dcb43add690fbd73e8d",
+          "role": "comparison",
+          "group": "inset-upload",
+          "caption": "A lighter bottom edge begins to make the upload target look recessed."
+        },
+        {
+          "id": "fig-178-201",
+          "page": 178,
+          "path": "references/figures/fig-178-201.webp",
+          "width": 1440,
+          "height": 553,
+          "sha256": "9f82b30f5016b40ffde24ab56ddca54c9cd840fd1bdc4f3aac99885de6d639f2",
+          "role": "comparison",
+          "group": "inset-upload",
+          "caption": "An inset shadow at the top completes the upload target's recessed appearance."
+        },
+        {
+          "id": "fig-178-202",
+          "page": 178,
+          "path": "references/figures/fig-178-202.webp",
+          "width": 1440,
+          "height": 900,
+          "sha256": "be008eed44a405f965b2994c06703b43c10276ba6c83866e9a83c3ab9b7b1d05",
+          "role": "comparison",
+          "group": "control-depth",
+          "caption": "Small highlights and shadows distinguish the input, checkbox and raised signup button in a dark form."
+        }
+      ]
+    },
+    {
+      "id": "use-shadows-to-convey-elevation",
+      "topic": "creating-depth",
+      "title": "Use shadows to convey elevation",
+      "page": 180,
+      "reference": "references/creating-depth.md#use-shadows-to-convey-elevation",
+      "when": "Buttons, menus and dialogs appear to sit at arbitrary or indistinguishable depths.",
+      "summary": "Choose shadows from a small elevation scale matched to each element's layering role.",
+      "caution": "Shadow does not fix stacking, clipping or focus behavior; dark themes may need other separation cues.",
+      "tags": [
+        "shadow",
+        "elevation",
+        "modal",
+        "dropdown",
+        "drag",
+        "pressed",
+        "popover",
+        "menu",
+        "tooltip",
+        "floating"
+      ],
+      "featured_figures": [
+        "fig-181-204",
+        "fig-181-205",
+        "fig-182-206"
+      ],
+      "figures": [
+        {
+          "id": "fig-180-203",
+          "page": 180,
+          "path": "references/figures/fig-180-203.webp",
+          "width": 1440,
+          "height": 1067,
+          "sha256": "7d23918d1b59878a4ac83f39f4606c0cc65494faa13fc84263362b09639a63f0",
+          "role": "diagram",
+          "group": "elevation",
+          "caption": "Front and side views relate stronger shadows to greater distance above an interface surface."
+        },
+        {
+          "id": "fig-181-204",
+          "page": 181,
+          "path": "references/figures/fig-181-204.webp",
+          "width": 1440,
+          "height": 540,
+          "sha256": "8ccc60ab13578715c1b2d611a64a1bcf3ca7e3c78d828acc27b217add258eaea",
+          "role": "comparison",
+          "group": "button-elevation",
+          "caption": "A small shadow gives a Publish button modest elevation."
+        },
+        {
+          "id": "fig-181-205",
+          "page": 181,
+          "path": "references/figures/fig-181-205.webp",
+          "width": 1440,
+          "height": 981,
+          "sha256": "82b6274b607c150d91019ac296cd1a08c307d09c946c30eefcba0d8876e90fa5",
+          "role": "comparison",
+          "group": "menu-elevation",
+          "caption": "A medium shadow separates an account dropdown from the page behind it."
+        },
+        {
+          "id": "fig-182-206",
+          "page": 182,
+          "path": "references/figures/fig-182-206.webp",
+          "width": 1440,
+          "height": 1289,
+          "sha256": "11699c14a2f2f6ae652356389e3699f6ef6ee357303d1feb190f6174d56737b7",
+          "role": "comparison",
+          "group": "modal-elevation",
+          "caption": "A broad soft shadow lifts a password dialog above its underlying form."
+        },
+        {
+          "id": "fig-183-207",
+          "page": 183,
+          "path": "references/figures/fig-183-207.webp",
+          "width": 1440,
+          "height": 487,
+          "sha256": "45c1bd62fe4cc9fcd94d11b39937b6ee66bb1ee224f825e0f09c65451edf43fa",
+          "role": "diagram",
+          "group": "shadow-scale",
+          "caption": "Five shadow samples progress from close-to-surface to strongly elevated."
+        },
+        {
+          "id": "fig-183-208",
+          "page": 183,
+          "path": "references/figures/fig-183-208.webp",
+          "width": 1440,
+          "height": 530,
+          "sha256": "d41096169282d1946326bf14450fbdda4c6e25b1cabbb66a860e95749dd50ff5",
+          "role": "example",
+          "group": "drag-elevation",
+          "caption": "A lifted playlist row gains a shadow while being reordered."
+        },
+        {
+          "id": "fig-184-209",
+          "page": 184,
+          "path": "references/figures/fig-184-209.webp",
+          "width": 1440,
+          "height": 575,
+          "sha256": "fb13666e9b65a3846ad79cc20eca0b4c86fb96133243711121afe1ddea782656",
+          "role": "comparison",
+          "group": "pressed-elevation",
+          "caption": "A Subscribe button's shadow shrinks in its pressed state."
+        }
+      ]
+    },
+    {
+      "id": "shadows-can-have-two-parts",
+      "topic": "creating-depth",
+      "title": "Shadows can have two parts",
+      "page": 186,
+      "reference": "references/creating-depth.md#shadows-can-have-two-parts",
+      "when": "A shadow feels muddy or its surface edge lacks definition.",
+      "summary": "Combine a broad soft shadow with a tighter contact shadow, reducing the latter at higher elevation.",
+      "caution": "Use the project's elevation tokens and inspect both supported themes; two shadows are a technique, not a requirement.",
+      "tags": [
+        "muddy shadow",
+        "contact shadow",
+        "ambient",
+        "direct light",
+        "depth"
+      ],
+      "featured_figures": [
+        "fig-188-213",
+        "fig-189-214"
+      ],
+      "figures": [
+        {
+          "id": "fig-186-210",
+          "page": 186,
+          "path": "references/figures/fig-186-210.webp",
+          "width": 1440,
+          "height": 826,
+          "sha256": "8f7d22ab7d65e95e865fb37a35bc541e1cad2bf8f7dd04dc3e50634d85e30464",
+          "role": "example",
+          "group": "two-part-shadow",
+          "caption": "An event card uses both a tight edge shadow and a broader soft shadow."
+        },
+        {
+          "id": "fig-187-211",
+          "page": 187,
+          "path": "references/figures/fig-187-211.webp",
+          "width": 1440,
+          "height": 726,
+          "sha256": "9bb6ff314dc3901b39731c683f334df8fe47f38618e81b0cd203a0b35b32ac24",
+          "role": "diagram",
+          "group": "direct-shadow",
+          "caption": "A notification and a plant pot illustrate the larger shadow cast by direct light."
+        },
+        {
+          "id": "fig-187-212",
+          "page": 187,
+          "path": "references/figures/fig-187-212.webp",
+          "width": 1440,
+          "height": 727,
+          "sha256": "1baa9b2d492edee1cac879c064ca8d58cbd4cea06f5884bf82f3e20ba40cf694",
+          "role": "diagram",
+          "group": "ambient-shadow",
+          "caption": "The same notification and pot illustrate a tight contact shadow near the surface."
+        },
+        {
+          "id": "fig-188-213",
+          "page": 188,
+          "path": "references/figures/fig-188-213.webp",
+          "width": 1440,
+          "height": 1462,
+          "sha256": "8850c3eb8a75ac5b347dfda874318893a32a161d7321b7b82ddba64385aabdbb",
+          "role": "comparison",
+          "group": "combined-shadows",
+          "caption": "Separate direct and contact shadows are combined on a notification card."
+        },
+        {
+          "id": "fig-189-214",
+          "page": 189,
+          "path": "references/figures/fig-189-214.webp",
+          "width": 1440,
+          "height": 584,
+          "sha256": "a56377420f9c8fc8f59631a400dd2aa5067221c73368f63a82b5fb566516a9ce",
+          "role": "diagram",
+          "group": "two-part-scale",
+          "caption": "A multi-level shadow scale reduces the contact component as elevation increases."
+        }
+      ]
+    },
+    {
+      "id": "even-flat-designs-can-have-depth",
+      "topic": "creating-depth",
+      "title": "Even flat designs can have depth",
+      "page": 190,
+      "reference": "references/creating-depth.md#even-flat-designs-can-have-depth",
+      "when": "A flat interface needs clearer separation without realistic soft shadows.",
+      "summary": "Use surface tones or a crisp offset shadow to indicate layering.",
+      "caution": "Lightness-to-depth is a visual convention, not a universal rule; verify it in the current theme.",
+      "tags": [
+        "flat design",
+        "surfaces",
+        "depth",
+        "tonal",
+        "solid shadow"
+      ],
+      "featured_figures": [
+        "fig-191-216",
+        "fig-192-217"
+      ],
+      "figures": [
+        {
+          "id": "fig-190-215",
+          "page": 190,
+          "path": "references/figures/fig-190-215.webp",
+          "width": 1440,
+          "height": 1203,
+          "sha256": "ce22dcf6b7fb02e5c3eb3aa5fbb89f06b2590b45b4f19231c95f07fb7779f0e6",
+          "role": "example",
+          "group": "flat-layers",
+          "caption": "A social feed separates white panels from a pale background without prominent soft shadows."
+        },
+        {
+          "id": "fig-191-216",
+          "page": 191,
+          "path": "references/figures/fig-191-216.webp",
+          "width": 1440,
+          "height": 1204,
+          "sha256": "9eff40246eff508f7385eeacc7e21215bb7da52aa4cd743f2c7286c42427f489",
+          "role": "diagram",
+          "group": "tonal-depth",
+          "caption": "A white login panel reads closer than the darker supporting signup area."
+        },
+        {
+          "id": "fig-192-217",
+          "page": 192,
+          "path": "references/figures/fig-192-217.webp",
+          "width": 1440,
+          "height": 830,
+          "sha256": "a289a60486e4257ebedc5855b4c545d1bcd2129daef6701fc60131c0da6814e8",
+          "role": "example",
+          "group": "solid-shadow",
+          "caption": "Shopping-cart rows use a solid offset shadow with no blur to suggest depth."
+        }
+      ]
+    },
+    {
+      "id": "overlap-elements-to-create-layers",
+      "topic": "creating-depth",
+      "title": "Overlap elements to create layers",
+      "page": 194,
+      "reference": "references/creating-depth.md#overlap-elements-to-create-layers",
+      "when": "Separate blocks feel disconnected, or overlapping images visually collide.",
+      "summary": "Let selected elements cross a section boundary and use a background-colored gap between overlapping images.",
+      "caution": "Preserve readable content, focus visibility and narrow-screen flow; do not introduce overlap solely for decoration.",
+      "tags": [
+        "overlap",
+        "layers",
+        "avatar",
+        "hero",
+        "carousel",
+        "section transition"
+      ],
+      "featured_figures": [
+        "fig-194-218",
+        "fig-196-221",
+        "fig-196-222"
+      ],
+      "figures": [
+        {
+          "id": "fig-194-218",
+          "page": 194,
+          "path": "references/figures/fig-194-218.webp",
+          "width": 1440,
+          "height": 1335,
+          "sha256": "f98cd10cdc4f847aaf9f4fb85446ae687f4961273cc570ce5c6dd5a3a5c8acba",
+          "role": "comparison",
+          "group": "overlap-transition",
+          "caption": "A flight-search card moves across the boundary between the hero image and page background."
+        },
+        {
+          "id": "fig-195-219",
+          "page": 195,
+          "path": "references/figures/fig-195-219.webp",
+          "width": 1440,
+          "height": 756,
+          "sha256": "eecb84b8b961e706b8c453b684ae8838b501c855d99676ed5ba5dd26635faecc",
+          "role": "example",
+          "group": "overlap-section",
+          "caption": "A license-renewal card extends above and below its colored parent section."
+        },
+        {
+          "id": "fig-195-220",
+          "page": 195,
+          "path": "references/figures/fig-195-220.webp",
+          "width": 1440,
+          "height": 499,
+          "sha256": "d7b3accbdb5c1231c48f4e6891d829aafc80832ed0a305d1c34962c721708b97",
+          "role": "example",
+          "group": "overlap-controls",
+          "caption": "Carousel arrows straddle the edges of a testimonial card."
+        },
+        {
+          "id": "fig-196-221",
+          "page": 196,
+          "path": "references/figures/fig-196-221.webp",
+          "width": 1440,
+          "height": 637,
+          "sha256": "ca94db96aecf1b8fc247eb91fabf86c4461d0c8ce0686ff885843b23479ee7f1",
+          "role": "before",
+          "group": "overlap-separation",
+          "caption": "A profile avatar overlaps a landscape cover without a separating edge and visually clashes with it."
+        },
+        {
+          "id": "fig-196-222",
+          "page": 196,
+          "path": "references/figures/fig-196-222.webp",
+          "width": 1440,
+          "height": 721,
+          "sha256": "f220555e0fbbc872eb3e31b1aeada288f716d3b01d143d45d4e257b03f71002c",
+          "role": "after",
+          "group": "overlap-separation",
+          "caption": "A border matching the card background separates overlapping avatars from neighboring imagery."
+        }
+      ]
+    },
+    {
+      "id": "use-good-photos",
+      "topic": "working-with-images",
+      "title": "Use good photos",
+      "page": 200,
+      "reference": "references/working-with-images.md#use-good-photos",
+      "when": "Weak lighting or composition undermines an otherwise clear card or hero.",
+      "summary": "Use imagery with appropriate lighting, composition and subject matter at the actual display size.",
+      "caution": "Work with supplied assets and permissions; do not assume stock imagery suits every product or misrepresents it.",
+      "tags": [
+        "photo",
+        "photography",
+        "imagery",
+        "listing",
+        "composition"
+      ],
+      "featured_figures": [
+        "fig-200-223"
+      ],
+      "figures": [
+        {
+          "id": "fig-200-223",
+          "page": 200,
+          "path": "references/figures/fig-200-223.webp",
+          "width": 1440,
+          "height": 1020,
+          "sha256": "1189eca55d61303216d2490748f6382d210d44a89eca828af54d640b4750d357",
+          "role": "comparison",
+          "group": "photo-quality",
+          "caption": "Better lighting and composition improve an apartment listing while its card layout stays the same."
+        }
+      ]
+    },
+    {
+      "id": "text-needs-consistent-contrast",
+      "topic": "working-with-images",
+      "title": "Text needs consistent contrast",
+      "page": 202,
+      "reference": "references/working-with-images.md#text-needs-consistent-contrast",
+      "when": "Hero text disappears over bright or dark parts of an image.",
+      "summary": "Treat the image or text backing to create a consistent readable foreground-background relationship.",
+      "caution": "Check the actual crop and every supported breakpoint; overlays and shadows do not automatically prove sufficient contrast.",
+      "tags": [
+        "hero",
+        "photo background",
+        "text overlay",
+        "unreadable image",
+        "contrast"
+      ],
+      "featured_figures": [
+        "fig-202-224",
+        "fig-203-226"
+      ],
+      "figures": [
+        {
+          "id": "fig-202-224",
+          "page": 202,
+          "path": "references/figures/fig-202-224.webp",
+          "width": 1440,
+          "height": 915,
+          "sha256": "bc9b39769c22892441e474821715b0f1356f496bc92cddd20d7f9c37c78bc53b",
+          "role": "before",
+          "group": "hero-text-contrast",
+          "caption": "A hero headline crosses both bright and dark areas of an untreated meeting-room photo."
+        },
+        {
+          "id": "fig-203-225",
+          "page": 203,
+          "path": "references/figures/fig-203-225.webp",
+          "width": 1440,
+          "height": 448,
+          "sha256": "71444ca402e3d10812d9da9bfb015dfb4562f96589c4ccd6a4d8f55f09425324",
+          "role": "problem",
+          "group": "hero-text-contrast",
+          "caption": "White and dark text each disappear into different regions of the same busy photo."
+        },
+        {
+          "id": "fig-203-226",
+          "page": 203,
+          "path": "references/figures/fig-203-226.webp",
+          "width": 1440,
+          "height": 931,
+          "sha256": "c928aa55aad9193e9b92cf7dbde93e94df95b1b88484dd4098a2351caac0c632",
+          "role": "after",
+          "group": "hero-text-contrast",
+          "caption": "A dark overlay makes light hero text more consistent across the photo."
+        },
+        {
+          "id": "fig-204-227",
+          "page": 204,
+          "path": "references/figures/fig-204-227.webp",
+          "width": 1440,
+          "height": 1017,
+          "sha256": "2daf060c77dc770461471a74f99b46e6f48de9f6d1693c8c8c12df4e87c5c73b",
+          "role": "example",
+          "group": "hero-image-treatment",
+          "caption": "Lower image contrast and higher brightness create a quieter backdrop for dark hero text."
+        },
+        {
+          "id": "fig-205-228",
+          "page": 205,
+          "path": "references/figures/fig-205-228.webp",
+          "width": 1440,
+          "height": 1017,
+          "sha256": "b4f13443eb9236c9ac7789bb5a3f81383e1eb84b3e8bd864337d1a57f40511a4",
+          "role": "example",
+          "group": "hero-image-treatment",
+          "caption": "A blue colorizing treatment gives light hero text a more uniform backdrop and ties the photo to the palette."
+        },
+        {
+          "id": "fig-206-229",
+          "page": 206,
+          "path": "references/figures/fig-206-229.webp",
+          "width": 1440,
+          "height": 959,
+          "sha256": "ab1df50f6276145f182c5190a7ed41776edd10a68944c0b13786d59d4bf3ff80",
+          "role": "example",
+          "group": "hero-image-treatment",
+          "caption": "A broad blurred text shadow adds local separation around a light headline."
+        }
+      ]
+    },
+    {
+      "id": "everything-has-an-intended-size",
+      "topic": "working-with-images",
+      "title": "Everything has an intended size",
+      "page": 208,
+      "reference": "references/working-with-images.md#everything-has-an-intended-size",
+      "when": "Enlarged icons look chunky, small screenshots are unreadable, or favicons lose their shape.",
+      "summary": "Use graphics designed for the target size; crop, simplify or recapture screenshots as needed.",
+      "caution": "Keep real product details accurate; a small icon's visual size is separate from its interactive hit area.",
+      "tags": [
+        "icon size",
+        "chunky",
+        "blurry",
+        "screenshot",
+        "favicon",
+        "scaling"
+      ],
+      "featured_figures": [
+        "fig-209-232",
+        "fig-209-233"
+      ],
+      "figures": [
+        {
+          "id": "fig-208-230",
+          "page": 208,
+          "path": "references/figures/fig-208-230.webp",
+          "width": 1440,
+          "height": 211,
+          "sha256": "09d47197781481f68df9ab34831e4b1e011c7a399f9c9eef1ba83dc0673fed6c",
+          "role": "comparison",
+          "group": "bitmap-scaling",
+          "caption": "Enlarging a raster logo makes its wordmark and play symbol visibly blurry."
+        },
+        {
+          "id": "fig-208-231",
+          "page": 208,
+          "path": "references/figures/fig-208-231.webp",
+          "width": 1440,
+          "height": 449,
+          "sha256": "f8b24687a616cd6efc2ec710584e50cd06f507ec5fbf34ea781dfa3c4c9542a7",
+          "role": "problem",
+          "group": "feature-icon-size",
+          "caption": "Large feature icons look heavy beside their short text descriptions."
+        },
+        {
+          "id": "fig-209-232",
+          "page": 209,
+          "path": "references/figures/fig-209-232.webp",
+          "width": 1440,
+          "height": 322,
+          "sha256": "40e5e9563fd6da390e6250d4fd14a7e53a0adad6ffb5eb1464ad517b9f7c0526",
+          "role": "comparison",
+          "group": "icon-redraw",
+          "caption": "A small megaphone enlarged to 48 pixels looks chunky beside one drawn for that size."
+        },
+        {
+          "id": "fig-209-233",
+          "page": 209,
+          "path": "references/figures/fig-209-233.webp",
+          "width": 1440,
+          "height": 322,
+          "sha256": "dcd45c1fa5ddb8f98034c7a70c533afc802d73a839b7289fe80c9eca7ca26360",
+          "role": "comparison",
+          "group": "icon-container",
+          "caption": "Keeping the megaphone small inside a tinted circle fills space without enlarging the icon itself."
+        },
+        {
+          "id": "fig-209-234",
+          "page": 209,
+          "path": "references/figures/fig-209-234.webp",
+          "width": 1440,
+          "height": 448,
+          "sha256": "23139a6cf521949c5b481a9d6cd89f8d004d856f90021e97c69d6c8471559840",
+          "role": "example",
+          "group": "feature-icon-size",
+          "caption": "Feature icons remain small inside colored circles, balancing the adjacent text."
+        },
+        {
+          "id": "fig-210-235",
+          "page": 210,
+          "path": "references/figures/fig-210-235.webp",
+          "width": 1440,
+          "height": 1002,
+          "sha256": "e75a34aefc32fd1d4346580ba375f73f96690ad5a750363db6cf334955fe248c",
+          "role": "before",
+          "group": "screenshot-size",
+          "caption": "A full desktop task-app screenshot becomes unreadable when shrunk into a marketing section."
+        },
+        {
+          "id": "fig-211-236",
+          "page": 211,
+          "path": "references/figures/fig-211-236.webp",
+          "width": 1440,
+          "height": 787,
+          "sha256": "c79d229c5a30fd4a4c1fbb1e92e120118c89c6036d677166462f6e252c86d1d7",
+          "role": "after",
+          "group": "screenshot-size",
+          "caption": "A capture of the smaller-device layout keeps task details legible in the same section."
+        },
+        {
+          "id": "fig-211-237",
+          "page": 211,
+          "path": "references/figures/fig-211-237.webp",
+          "width": 1440,
+          "height": 789,
+          "sha256": "24a2bf83982c1ffd4adc52340e621cd868ae780c4f536f3cae5ad9ae4b481f19",
+          "role": "example",
+          "group": "screenshot-alternatives",
+          "caption": "A circular crop highlights one relevant area of the task app at a readable scale."
+        },
+        {
+          "id": "fig-212-238",
+          "page": 212,
+          "path": "references/figures/fig-212-238.webp",
+          "width": 1440,
+          "height": 789,
+          "sha256": "2055b73fa3a73b35e1c6ef9d401c6182d203fdef65de9b43e8e406379f08f5a6",
+          "role": "example",
+          "group": "screenshot-alternatives",
+          "caption": "A simplified UI illustration substitutes lines for tiny text while preserving the product's shape."
+        },
+        {
+          "id": "fig-213-239",
+          "page": 213,
+          "path": "references/figures/fig-213-239.webp",
+          "width": 1440,
+          "height": 312,
+          "sha256": "cea8f91a8eb2a79cda32aa8ea8be0e2448010a6e8930711de13712a27a09ba8a",
+          "role": "before",
+          "group": "favicon-detail",
+          "caption": "A detailed starburst icon loses definition when reduced to favicon size."
+        },
+        {
+          "id": "fig-213-240",
+          "page": 213,
+          "path": "references/figures/fig-213-240.webp",
+          "width": 1440,
+          "height": 312,
+          "sha256": "8ea1c5822ceac333c380001a6ac0e8ca6faf0ffe8fde780ddb2f9b361ff33302",
+          "role": "after",
+          "group": "favicon-detail",
+          "caption": "A simplified starburst retains a recognizable silhouette at the small target size."
+        }
+      ]
+    },
+    {
+      "id": "beware-user-uploaded-content",
+      "topic": "working-with-images",
+      "title": "Beware user-uploaded content",
+      "page": 214,
+      "reference": "references/working-with-images.md#beware-user-uploaded-content",
+      "when": "Varied aspect ratios break card layouts, or avatars lose their visible edges.",
+      "summary": "Use consistent image containers with deliberate cropping and subtle edge treatment where needed.",
+      "caution": "Preserve the subject and meaningful content; cover-cropping is unsuitable when the entire image must be visible.",
+      "tags": [
+        "uploads",
+        "avatar",
+        "crop",
+        "aspect ratio",
+        "images",
+        "cover"
+      ],
+      "featured_figures": [
+        "fig-214-241",
+        "fig-215-242"
+      ],
+      "figures": [
+        {
+          "id": "fig-214-241",
+          "page": 214,
+          "path": "references/figures/fig-214-241.webp",
+          "width": 1440,
+          "height": 819,
+          "sha256": "12590baf194a5accc20d3d4acef7958296d1c41d226ce721d35c4a648ba8defc",
+          "role": "before",
+          "group": "upload-aspect-ratio",
+          "caption": "Different photo aspect ratios make recipe-card rows uneven."
+        },
+        {
+          "id": "fig-215-242",
+          "page": 215,
+          "path": "references/figures/fig-215-242.webp",
+          "width": 1440,
+          "height": 701,
+          "sha256": "9bc37d63dd1f62f5520ebfe69f415702018a3e91de931f7db4ae459d2ecc41bc",
+          "role": "after",
+          "group": "upload-aspect-ratio",
+          "caption": "Consistent image containers align the recipe cards into orderly rows."
+        },
+        {
+          "id": "fig-215-243",
+          "page": 215,
+          "path": "references/figures/fig-215-243.webp",
+          "width": 1440,
+          "height": 820,
+          "sha256": "95df62e3ad5eda6b4a2cecd8ffd40abb89b0817685efd4da610523bff9cbc010",
+          "role": "diagram",
+          "group": "cover-crop",
+          "caption": "A photo covers a fixed card container by cropping its overflow instead of distorting its proportions."
+        },
+        {
+          "id": "fig-216-244",
+          "page": 216,
+          "path": "references/figures/fig-216-244.webp",
+          "width": 1440,
+          "height": 675,
+          "sha256": "9a701e6fd4aa2eed57e4b919a11677c73272b46463b589c74599a9e8eb72f719",
+          "role": "problem",
+          "group": "avatar-edges",
+          "caption": "Light avatar backgrounds disappear into a white messaging interface."
+        },
+        {
+          "id": "fig-216-245",
+          "page": 216,
+          "path": "references/figures/fig-216-245.webp",
+          "width": 1440,
+          "height": 674,
+          "sha256": "cc041cd9f9b0ea6ae9bdfe457e3205f7a3fb9dd65205e660f3558073631418a8",
+          "role": "comparison",
+          "group": "avatar-border",
+          "caption": "A strong avatar border is compared with a subtler edge that interferes less with the photos."
+        },
+        {
+          "id": "fig-217-246",
+          "page": 217,
+          "path": "references/figures/fig-217-246.webp",
+          "width": 1440,
+          "height": 674,
+          "sha256": "be66c6e5d2c8319a85eb9264697ad3e30bd279f6bfe71503ce9866b6796560e3",
+          "role": "example",
+          "group": "avatar-border",
+          "caption": "A faint inset edge defines circular avatars against the surrounding white interface."
+        }
+      ]
+    },
+    {
+      "id": "supercharge-the-defaults",
+      "topic": "finishing-touches",
+      "title": "Supercharge the defaults",
+      "page": 220,
+      "reference": "references/finishing-touches.md#supercharge-the-defaults",
+      "when": "A sound layout feels generic because its existing elements receive no attention.",
+      "summary": "Refine list markers, quotation marks, link treatments and form-control styling.",
+      "caution": "Preserve semantics, keyboard interaction and visible states; use established accessible controls rather than rebuilding behavior for decoration.",
+      "tags": [
+        "polish",
+        "bullets",
+        "checkbox",
+        "radio",
+        "quotation",
+        "defaults"
+      ],
+      "featured_figures": [
+        "fig-220-247",
+        "fig-222-251"
+      ],
+      "figures": [
+        {
+          "id": "fig-220-247",
+          "page": 220,
+          "path": "references/figures/fig-220-247.webp",
+          "width": 1440,
+          "height": 485,
+          "sha256": "45a5de205f8cf96f1ff3160ac5602120a3b8de1e08ebe810de6fb8515f9917e1",
+          "role": "comparison",
+          "group": "list-markers",
+          "caption": "Colored checkmark icons replace plain bullets in a feature list."
+        },
+        {
+          "id": "fig-220-248",
+          "page": 220,
+          "path": "references/figures/fig-220-248.webp",
+          "width": 1440,
+          "height": 499,
+          "sha256": "1e8ec09d87f603c1acbca82326ffc22a5e68151f58b186b3154906b682ec85a7",
+          "role": "comparison",
+          "group": "semantic-markers",
+          "caption": "Padlock icons reinforce the meaning of a security-feature list."
+        },
+        {
+          "id": "fig-221-249",
+          "page": 221,
+          "path": "references/figures/fig-221-249.webp",
+          "width": 1440,
+          "height": 631,
+          "sha256": "9e445e9810d508919a38796963385f6520cf80fff30ee7de5ae56c059faa3800",
+          "role": "comparison",
+          "group": "quote-decoration",
+          "caption": "Larger tinted quotation marks give a testimonial visual character."
+        },
+        {
+          "id": "fig-221-250",
+          "page": 221,
+          "path": "references/figures/fig-221-250.webp",
+          "width": 1440,
+          "height": 822,
+          "sha256": "936c0447f3329316d1134dc6a12dbca7e96a648fb49109dc924337e77167d2bb",
+          "role": "comparison",
+          "group": "link-decoration",
+          "caption": "A plain colored inline link gains emphasis through weight or a thicker underline."
+        },
+        {
+          "id": "fig-222-251",
+          "page": 222,
+          "path": "references/figures/fig-222-251.webp",
+          "width": 1440,
+          "height": 919,
+          "sha256": "f08f3d387d76366c23f0bdd4b21f06d2e9fb31bf4c70b43cb9bc92da60e3ee62",
+          "role": "comparison",
+          "group": "branded-controls",
+          "caption": "Checkboxes and radio buttons gain a consistent purple treatment and clearer visual size."
+        }
+      ]
+    },
+    {
+      "id": "add-color-with-accent-borders",
+      "topic": "finishing-touches",
+      "title": "Add color with accent borders",
+      "page": 224,
+      "reference": "references/finishing-touches.md#add-color-with-accent-borders",
+      "when": "A restrained interface needs a small amount of identity or a clearer active state.",
+      "summary": "Add a purposeful accent line to a card, alert, heading or active navigation item.",
+      "caution": "Avoid redundant accents everywhere; selected-state cues must remain perceivable in supported display modes.",
+      "tags": [
+        "accent",
+        "border",
+        "active navigation",
+        "underline",
+        "identity"
+      ],
+      "featured_figures": [
+        "fig-224-252",
+        "fig-225-253"
+      ],
+      "figures": [
+        {
+          "id": "fig-224-252",
+          "page": 224,
+          "path": "references/figures/fig-224-252.webp",
+          "width": 1440,
+          "height": 1160,
+          "sha256": "3db8dff93ea80c5befd8730b0e653325247060adb996d3e966db61d26be109e5",
+          "role": "comparison",
+          "group": "card-accent",
+          "caption": "A slim cyan top border adds identity to a pricing card."
+        },
+        {
+          "id": "fig-225-253",
+          "page": 225,
+          "path": "references/figures/fig-225-253.webp",
+          "width": 1440,
+          "height": 448,
+          "sha256": "a00dd7db84bc3d2dee7e52f538afb4f0e703dce65c388247a6cb3df4cc11c361",
+          "role": "comparison",
+          "group": "active-nav-accent",
+          "caption": "An underline adds a second cue to the active navigation item."
+        },
+        {
+          "id": "fig-225-254",
+          "page": 225,
+          "path": "references/figures/fig-225-254.webp",
+          "width": 1440,
+          "height": 453,
+          "sha256": "e8f5e0fee2a9dc711b07871e653df75c922d654c4233f5ef427cf1110561e7e5",
+          "role": "comparison",
+          "group": "alert-accent",
+          "caption": "A blue side border strengthens the grouping of a tinted information alert."
+        },
+        {
+          "id": "fig-225-255",
+          "page": 225,
+          "path": "references/figures/fig-225-255.webp",
+          "width": 1440,
+          "height": 508,
+          "sha256": "46aebe9fd5b21913aa3d2b1b455616e37e136f2bba682ac4316fa99168fefaaf",
+          "role": "comparison",
+          "group": "heading-accent",
+          "caption": "A short colored bar adds a visual anchor beneath a section heading."
+        },
+        {
+          "id": "fig-226-256",
+          "page": 226,
+          "path": "references/figures/fig-226-256.webp",
+          "width": 1440,
+          "height": 1421,
+          "sha256": "2f264b1815f8942516924e20d6a332177e57b84be7e0e362c2a565a030a14bd7",
+          "role": "comparison",
+          "group": "page-accent",
+          "caption": "A narrow colored strip along the page top adds character to a restrained event landing page."
+        }
+      ]
+    },
+    {
+      "id": "decorate-your-backgrounds",
+      "topic": "finishing-touches",
+      "title": "Decorate your backgrounds",
+      "page": 228,
+      "reference": "references/finishing-touches.md#decorate-your-backgrounds",
+      "when": "Hierarchy and spacing work but a surface still feels plain.",
+      "summary": "Try a restrained background tone, gentle gradient or low-contrast decorative fragment.",
+      "caution": "Keep decoration behind the content and avoid degrading contrast or implying meaningful data.",
+      "tags": [
+        "background",
+        "plain",
+        "boring",
+        "gradient",
+        "pattern",
+        "decoration"
+      ],
+      "featured_figures": [
+        "fig-229-258",
+        "fig-230-260"
+      ],
+      "figures": [
+        {
+          "id": "fig-228-257",
+          "page": 228,
+          "path": "references/figures/fig-228-257.webp",
+          "width": 1440,
+          "height": 996,
+          "sha256": "cd3636173a504a370133cf41b7a48bf170f8307a23d864837a8b66238d0233b5",
+          "role": "comparison",
+          "group": "panel-background",
+          "caption": "A colored pricing panel gives an otherwise plain card a stronger identity."
+        },
+        {
+          "id": "fig-229-258",
+          "page": 229,
+          "path": "references/figures/fig-229-258.webp",
+          "width": 1440,
+          "height": 872,
+          "sha256": "5b819078c6961e00a0d09790b412d6067063a3f84045d3af39ec314db7025bb7",
+          "role": "comparison",
+          "group": "section-backgrounds",
+          "caption": "Alternating colored, dark and pale backgrounds distinguish a landing page's sections."
+        },
+        {
+          "id": "fig-229-259",
+          "page": 229,
+          "path": "references/figures/fig-229-259.webp",
+          "width": 1440,
+          "height": 566,
+          "sha256": "7492aef03e7dea13a5cf70477616cb4486344bdef23e540234367e2f3cb1bde5",
+          "role": "example",
+          "group": "subtle-gradient",
+          "caption": "A gentle blue gradient adds interest behind a feature grid."
+        },
+        {
+          "id": "fig-230-260",
+          "page": 230,
+          "path": "references/figures/fig-230-260.webp",
+          "width": 1440,
+          "height": 632,
+          "sha256": "cc907c01b65356a725904278c39d45a42b55715c96d4529b225cb8dab490a2ab",
+          "role": "example",
+          "group": "pattern-background",
+          "caption": "A low-contrast contour pattern decorates an About me heading panel."
+        },
+        {
+          "id": "fig-230-261",
+          "page": 230,
+          "path": "references/figures/fig-230-261.webp",
+          "width": 1440,
+          "height": 565,
+          "sha256": "cbab077f1df08d62a6d43cdf18566f2194be8622708788886f836fb07bb5473e",
+          "role": "example",
+          "group": "edge-pattern",
+          "caption": "A restrained square pattern sits along a dark footer's lower edge."
+        },
+        {
+          "id": "fig-231-262",
+          "page": 231,
+          "path": "references/figures/fig-231-262.webp",
+          "width": 1440,
+          "height": 643,
+          "sha256": "94d377dd8fe2c048429b8f877fc5ea7dda4cd10dba48888497060276c33bd54d",
+          "role": "example",
+          "group": "pattern-fragment",
+          "caption": "A small dotted geometric fragment decorates the side of an article heading."
+        },
+        {
+          "id": "fig-231-263",
+          "page": 231,
+          "path": "references/figures/fig-231-263.webp",
+          "width": 1440,
+          "height": 702,
+          "sha256": "85197619db81a71d3a88af4884db15e0380460206a256b75a1ada05b20a66b19",
+          "role": "example",
+          "group": "pattern-fragment",
+          "caption": "A low-contrast wave fragment adds detail beside a pricing heading."
+        },
+        {
+          "id": "fig-232-264",
+          "page": 232,
+          "path": "references/figures/fig-232-264.webp",
+          "width": 1440,
+          "height": 545,
+          "sha256": "ec4b5c1a93ea4559ba0ebc86c893b14e6b1fb676a2ca58d393decbe5596625e4",
+          "role": "example",
+          "group": "background-illustration",
+          "caption": "A faint dotted world map sits behind a newsletter signup form."
+        }
+      ]
+    },
+    {
+      "id": "dont-overlook-empty-states",
+      "topic": "finishing-touches",
+      "title": "Don’t overlook empty states",
+      "page": 234,
+      "reference": "references/finishing-touches.md#dont-overlook-empty-states",
+      "when": "A first-use screen shows only absence and gives no clear next action.",
+      "summary": "Explain the feature and make its first useful action prominent, simplifying controls with no purpose yet.",
+      "caution": "Distinguish first use from filtered zero results and errors; keep filters visible when users need them to recover.",
+      "tags": [
+        "empty state",
+        "onboarding",
+        "no data",
+        "first use",
+        "zero results",
+        "blank page",
+        "no items",
+        "nothing here"
+      ],
+      "featured_figures": [
+        "fig-235-266",
+        "fig-235-267"
+      ],
+      "figures": [
+        {
+          "id": "fig-234-265",
+          "page": 234,
+          "path": "references/figures/fig-234-265.webp",
+          "width": 1440,
+          "height": 1339,
+          "sha256": "8d2b06675704e8e05c324dd6fcc492811fe1e8852f682fb0f8ea9887dc5c50d1",
+          "role": "example",
+          "group": "populated-contacts",
+          "caption": "A contact list shows the populated state with search, previews and unread counts."
+        },
+        {
+          "id": "fig-235-266",
+          "page": 235,
+          "path": "references/figures/fig-235-266.webp",
+          "width": 1440,
+          "height": 668,
+          "sha256": "c972b4a4c47bd2c1759bb6a629cad466c2a230b74e2a41c060933696d3a70cb5",
+          "role": "before",
+          "group": "empty-contacts",
+          "caption": "An empty contact screen offers only a No contacts found message and a small plus control."
+        },
+        {
+          "id": "fig-235-267",
+          "page": 235,
+          "path": "references/figures/fig-235-267.webp",
+          "width": 1440,
+          "height": 674,
+          "sha256": "c7dfb31dd42c856ca5415996f53a6a75b806f068eb412e4970edd72d67d50e37",
+          "role": "after",
+          "group": "empty-contacts",
+          "caption": "An illustration, short explanation and prominent Add contact button guide the first action."
+        },
+        {
+          "id": "fig-236-268",
+          "page": 236,
+          "path": "references/figures/fig-236-268.webp",
+          "width": 1440,
+          "height": 1402,
+          "sha256": "dff972ad1d599378efcf0096ae46e350d3f316c335d66119bf5b5919a792acd5",
+          "role": "comparison",
+          "group": "empty-discounts",
+          "caption": "The first-use discounts screen removes irrelevant filters and tabs and focuses on creating a discount."
+        }
+      ]
+    },
+    {
+      "id": "use-fewer-borders",
+      "topic": "finishing-touches",
+      "title": "Use fewer borders",
+      "page": 238,
+      "reference": "references/finishing-touches.md#use-fewer-borders",
+      "when": "An interface looks boxed in by repeated outlines and dividers.",
+      "summary": "Use spacing, surface tones or a restrained shadow where they communicate the same grouping.",
+      "caution": "Retain required control boundaries, focus indicators and separators needed for dense data or forced-colors modes.",
+      "tags": [
+        "borders",
+        "clutter",
+        "boxed",
+        "dividers",
+        "separators",
+        "contact picker",
+        "nested cards",
+        "card in card",
+        "lines everywhere"
+      ],
+      "featured_figures": [
+        "fig-238-269",
+        "fig-241-272"
+      ],
+      "figures": [
+        {
+          "id": "fig-238-269",
+          "page": 238,
+          "path": "references/figures/fig-238-269.webp",
+          "width": 1440,
+          "height": 1236,
+          "sha256": "a1266b1f8faacae1c01d90c36e1a50568cd3145862e2ba57e5f8f2f8f9da1aac",
+          "role": "before",
+          "group": "border-clutter",
+          "caption": "A contact picker outlines its container, search field and every row with borders."
+        },
+        {
+          "id": "fig-239-270",
+          "page": 239,
+          "path": "references/figures/fig-239-270.webp",
+          "width": 1440,
+          "height": 1315,
+          "sha256": "07fe361b51ed57c2907623ae86ba84b1b47f54a28d75c59c06849a7e3f392332",
+          "role": "example",
+          "group": "border-clutter",
+          "caption": "A shadow replaces the contact picker's outer border."
+        },
+        {
+          "id": "fig-240-271",
+          "page": 240,
+          "path": "references/figures/fig-240-271.webp",
+          "width": 1440,
+          "height": 1315,
+          "sha256": "374c8934986ebbe807e51389a2dc796b77784659ab5b5e76c7a74f79c4cc8380",
+          "role": "example",
+          "group": "border-clutter",
+          "caption": "Background fills separate the search and footer areas without extra outlines."
+        },
+        {
+          "id": "fig-241-272",
+          "page": 241,
+          "path": "references/figures/fig-241-272.webp",
+          "width": 1440,
+          "height": 1315,
+          "sha256": "7f92007e45df4927c560e68189632d454f803ee2ccf58147e2ab729cbadc22a3",
+          "role": "after",
+          "group": "border-clutter",
+          "caption": "Row spacing and a selected-row tint replace most remaining dividers."
+        }
+      ]
+    },
+    {
+      "id": "think-outside-the-box",
+      "topic": "finishing-touches",
+      "title": "Think outside the box",
+      "page": 242,
+      "reference": "references/finishing-touches.md#think-outside-the-box",
+      "when": "A dropdown, table or choice group is hard to scan in its default presentation.",
+      "summary": "Reorganize related content with descriptions, grouped cells or selectable cards when it improves the task.",
+      "caution": "Preserve interaction semantics, keyboard behavior, data relationships and useful sorting; richer layouts need a narrow-screen plan.",
+      "tags": [
+        "dropdown",
+        "table",
+        "radio",
+        "cards",
+        "plan selector",
+        "component layout",
+        "select",
+        "list rows",
+        "menu items"
+      ],
+      "featured_figures": [
+        "fig-245-278",
+        "fig-246-279"
+      ],
+      "figures": [
+        {
+          "id": "fig-242-273",
+          "page": 242,
+          "path": "references/figures/fig-242-273.webp",
+          "width": 1440,
+          "height": 1199,
+          "sha256": "605c51b45abad15b66a1d0f379565f0aadf0adc8dbce35edb70e49ca2be16fc1",
+          "role": "before",
+          "group": "richer-dropdown",
+          "caption": "A feature dropdown presents a long undifferentiated list of links."
+        },
+        {
+          "id": "fig-243-274",
+          "page": 243,
+          "path": "references/figures/fig-243-274.webp",
+          "width": 1440,
+          "height": 1476,
+          "sha256": "3a6664e275f80b6fc1a00f31474090498d8d87e3aa0c35a4b5c4a100a38de37a",
+          "role": "after",
+          "group": "richer-dropdown",
+          "caption": "The dropdown uses columns, icons, descriptions and a separate resources section to clarify choices."
+        },
+        {
+          "id": "fig-244-275",
+          "page": 244,
+          "path": "references/figures/fig-244-275.webp",
+          "width": 1440,
+          "height": 682,
+          "sha256": "35879ed6f1f74c66274e6b699cd5a736bdc1630ff5d0da68dbf3904c29e12c13",
+          "role": "before",
+          "group": "table-hierarchy",
+          "caption": "A policy table gives related name, role, value and policy-type fields separate equal-weight columns."
+        },
+        {
+          "id": "fig-244-276",
+          "page": 244,
+          "path": "references/figures/fig-244-276.webp",
+          "width": 1440,
+          "height": 682,
+          "sha256": "a96f3bdd754846c2212a3a67767081540d0e0b8fb624967e535d00adb115a058",
+          "role": "example",
+          "group": "table-hierarchy",
+          "caption": "Related values are stacked within cells to reduce columns and establish hierarchy."
+        },
+        {
+          "id": "fig-245-277",
+          "page": 245,
+          "path": "references/figures/fig-245-277.webp",
+          "width": 1440,
+          "height": 682,
+          "sha256": "b4c379a538fe3a285833a91e07ab699ab29be77cf4afa774970ebb9e75ce7f70",
+          "role": "after",
+          "group": "table-hierarchy",
+          "caption": "Avatars and quiet status badges add scannable cues to the reorganized policy table."
+        },
+        {
+          "id": "fig-245-278",
+          "page": 245,
+          "path": "references/figures/fig-245-278.webp",
+          "width": 1440,
+          "height": 771,
+          "sha256": "c557e3f0a24f41924ac306f56e5fb66efe421432a4699617e942b3c61a229647",
+          "role": "before",
+          "group": "plan-options",
+          "caption": "A plan selector uses plain radio rows with capacities and prices in a single text line."
+        },
+        {
+          "id": "fig-246-279",
+          "page": 246,
+          "path": "references/figures/fig-246-279.webp",
+          "width": 1440,
+          "height": 682,
+          "sha256": "bdfaf73a00c3377f13a56c66e0484783603646ca98e8eefd9d9033fb97985ddb",
+          "role": "after",
+          "group": "plan-options",
+          "caption": "Selectable cards emphasize each plan's capacity and price and visibly mark the selected plan."
+        }
+      ]
+    },
+    {
+      "id": "leveling-up",
+      "topic": "leveling-up",
+      "title": "Leveling up",
+      "page": 250,
+      "reference": "references/leveling-up.md#leveling-up",
+      "when": "You want to understand which subtle decisions make an admired interface work.",
+      "summary": "Study unexpected choices and reconstruct a small example to expose details in spacing, type and layers.",
+      "caution": "Use reconstruction as a learning exercise when requested; apply principles to the current product's identity.",
+      "tags": [
+        "practice",
+        "study",
+        "learn",
+        "inspiration",
+        "rebuild",
+        "design eye"
+      ],
+      "featured_figures": [
+        "fig-250-280",
+        "fig-251-281",
+        "fig-251-282",
+        "fig-252-283"
+      ],
+      "figures": [
+        {
+          "id": "fig-250-280",
+          "page": 250,
+          "path": "references/figures/fig-250-280.webp",
+          "width": 1440,
+          "height": 714,
+          "sha256": "d5ef03f935977eb473faf4dcddff3e0705341b267b730287d9cfb6a01bf091d7",
+          "role": "example",
+          "group": "unexpected-decisions",
+          "caption": "A dark date picker contrasts with the surrounding light interface."
+        },
+        {
+          "id": "fig-251-281",
+          "page": 251,
+          "path": "references/figures/fig-251-281.webp",
+          "width": 1440,
+          "height": 444,
+          "sha256": "f10b628dbae82415e9c00fe23f81c2d5a8bad2c1a1c72fbd5806423281193cb3",
+          "role": "example",
+          "group": "unexpected-decisions",
+          "caption": "A newsletter action sits inside the visual boundary of its email field."
+        },
+        {
+          "id": "fig-251-282",
+          "page": 251,
+          "path": "references/figures/fig-251-282.webp",
+          "width": 1440,
+          "height": 663,
+          "sha256": "b65775b76727a930caeb128af5c63454bd036054fb88d6d5c3ee15b1ceaef200",
+          "role": "example",
+          "group": "unexpected-decisions",
+          "caption": "A hero headline uses two text colors to emphasize part of the sentence."
+        },
+        {
+          "id": "fig-252-283",
+          "page": 252,
+          "path": "references/figures/fig-252-283.webp",
+          "width": 1440,
+          "height": 870,
+          "sha256": "7dc89c8c81495bc34fb9e9cc0798e2b84dc4bf2ecf9a3b3e98aa6aa8af197291",
+          "role": "diagram",
+          "group": "rebuild-observations",
+          "caption": "An annotated card identifies tight headline leading, image cropping, layered shadows and uppercase tracking."
+        }
+      ]
+    }
+  ]
+}
