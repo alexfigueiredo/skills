@@ -1,7 +1,6 @@
 ---
 name: refactoring-ui
 description: "Design or critique interfaces using practical rules and annotated visual examples for hierarchy, spacing, typography, color, depth, imagery and finishing touches. Use for visual UI improvements, new screens and design-system decisions."
-disable-model-invocation: true
 ---
 
 # Refactoring UI
