@@ -1,10 +1,10 @@
-# Creating Depth
+# Depth
 
-Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its annotated figures. Figure paths are relative to this file.
+Read the matching rule below. `scripts/find_examples.py --rule <id>` returns its figures when it has them; open them when the rule concerns a visual quantity or you are unsure how far to take it. Figure paths are relative to this file.
 
-<a id="emulate-a-light-source"></a>
+<a id="use-one-light-direction"></a>
 
-## Emulate a light source
+## Use one light direction
 
 **When:** Raised and inset controls feel flat or their light cues contradict each other.
 
@@ -14,11 +14,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Depth is optional and should suit the established visual style; avoid decorative cues that imply nonexistent controls.
 
-**Visuals:** [fig-176-197 (comparison)](figures/fig-176-197.webp), [fig-176-198 (comparison)](figures/fig-176-198.webp). Lookup: `emulate-a-light-source`.
+**Visuals:** [use-one-light-direction-7 (comparison)](figures/use-one-light-direction-7.webp), [use-one-light-direction-8 (comparison)](figures/use-one-light-direction-8.webp). Lookup: `use-one-light-direction`.
 
-<a id="use-shadows-to-convey-elevation"></a>
+<a id="map-shadows-to-elevation"></a>
 
-## Use shadows to convey elevation
+## Map shadows to elevation
 
 **When:** Buttons, menus and dialogs appear to sit at arbitrary or indistinguishable depths.
 
@@ -28,11 +28,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Shadow does not fix stacking, clipping or focus behavior; dark themes may need other separation cues.
 
-**Visuals:** [fig-181-204 (comparison)](figures/fig-181-204.webp), [fig-181-205 (comparison)](figures/fig-181-205.webp), [fig-182-206 (comparison)](figures/fig-182-206.webp). Lookup: `use-shadows-to-convey-elevation`.
+**Visuals:** [map-shadows-to-elevation-2 (comparison)](figures/map-shadows-to-elevation-2.webp), [map-shadows-to-elevation-3 (comparison)](figures/map-shadows-to-elevation-3.webp), [map-shadows-to-elevation-4 (comparison)](figures/map-shadows-to-elevation-4.webp). Lookup: `map-shadows-to-elevation`.
 
-<a id="shadows-can-have-two-parts"></a>
+<a id="combine-ambient-and-contact-shadows"></a>
 
-## Shadows can have two parts
+## Combine ambient and contact shadows
 
 **When:** A shadow feels muddy or its surface edge lacks definition.
 
@@ -42,11 +42,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Use the project's elevation tokens and inspect both supported themes; two shadows are a technique, not a requirement.
 
-**Visuals:** [fig-188-213 (comparison)](figures/fig-188-213.webp), [fig-189-214 (diagram)](figures/fig-189-214.webp). Lookup: `shadows-can-have-two-parts`.
+**Visuals:** [combine-ambient-and-contact-shadows-4 (comparison)](figures/combine-ambient-and-contact-shadows-4.webp), [combine-ambient-and-contact-shadows-5 (diagram)](figures/combine-ambient-and-contact-shadows-5.webp). Lookup: `combine-ambient-and-contact-shadows`.
 
-<a id="even-flat-designs-can-have-depth"></a>
+<a id="layer-flat-designs-with-tone"></a>
 
-## Even flat designs can have depth
+## Layer flat designs with tone
 
 **When:** A flat interface needs clearer separation without realistic soft shadows.
 
@@ -56,11 +56,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Lightness-to-depth is a visual convention, not a universal rule; verify it in the current theme.
 
-**Visuals:** [fig-191-216 (diagram)](figures/fig-191-216.webp), [fig-192-217 (example)](figures/fig-192-217.webp). Lookup: `even-flat-designs-can-have-depth`.
+**Visuals:** [layer-flat-designs-with-tone-2 (diagram)](figures/layer-flat-designs-with-tone-2.webp), [layer-flat-designs-with-tone-3 (example)](figures/layer-flat-designs-with-tone-3.webp). Lookup: `layer-flat-designs-with-tone`.
 
-<a id="overlap-elements-to-create-layers"></a>
+<a id="overlap-to-create-layers"></a>
 
-## Overlap elements to create layers
+## Overlap to create layers
 
 **When:** Separate blocks feel disconnected, or overlapping images visually collide.
 
@@ -70,4 +70,4 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Preserve readable content, focus visibility and narrow-screen flow; do not introduce overlap solely for decoration.
 
-**Visuals:** [fig-196-221 (before)](figures/fig-196-221.webp), [fig-194-218 (comparison)](figures/fig-194-218.webp), [fig-196-222 (after)](figures/fig-196-222.webp). Lookup: `overlap-elements-to-create-layers`.
+**Visuals:** [overlap-to-create-layers-1 (comparison)](figures/overlap-to-create-layers-1.webp), [overlap-to-create-layers-4 (before)](figures/overlap-to-create-layers-4.webp), [overlap-to-create-layers-5 (after)](figures/overlap-to-create-layers-5.webp). Lookup: `overlap-to-create-layers`.

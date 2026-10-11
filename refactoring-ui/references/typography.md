@@ -1,10 +1,10 @@
-# Designing Text
+# Typography
 
-Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its annotated figures. Figure paths are relative to this file.
+Read the matching rule below. `scripts/find_examples.py --rule <id>` returns its figures when it has them; open them when the rule concerns a visual quantity or you are unsure how far to take it. Figure paths are relative to this file.
 
-<a id="establish-a-type-scale"></a>
+<a id="use-a-type-scale"></a>
 
-## Establish a type scale
+## Use a type scale
 
 **When:** Similar text roles use many nearly identical font sizes.
 
@@ -14,11 +14,15 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Prefer existing tokens and avoid accidental em compounding; intentional relative sizing and fractional values are valid.
 
-**Visuals:** [fig-102-101 (before)](figures/fig-102-101.webp), [fig-106-104 (after)](figures/fig-106-104.webp). Lookup: `establish-a-type-scale`.
+**By mode:**
+- operate, browse: One family; most text uses the small end of the scale (about 12–24 px).
+- convert: A display face and a wide ratio between headline and body are appropriate.
 
-<a id="use-good-fonts"></a>
+**Visuals:** [use-a-type-scale-1 (before)](figures/use-a-type-scale-1.webp), [use-a-type-scale-4 (after)](figures/use-a-type-scale-4.webp). Lookup: `use-a-type-scale`.
 
-## Use good fonts
+<a id="choose-legible-typefaces"></a>
+
+## Choose legible typefaces
 
 **When:** Body text is hard to read or font selection is consuming the design process.
 
@@ -28,11 +32,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Popularity and number of styles are selection shortcuts, not quality guarantees; variable fonts need not have many files.
 
-**Visuals:** [fig-110-108 (comparison)](figures/fig-110-108.webp). Lookup: `use-good-fonts`.
+**Visuals:** [choose-legible-typefaces-3 (comparison)](figures/choose-legible-typefaces-3.webp). Lookup: `choose-legible-typefaces`.
 
-<a id="keep-your-line-length-in-check"></a>
+<a id="limit-line-length"></a>
 
-## Keep your line length in check
+## Limit line length
 
 **When:** Paragraphs span too much of the page and are tiring to read.
 
@@ -42,11 +46,14 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** The 45-75 character range is a prose heuristic; judge the actual script, font, device and content.
 
-**Visuals:** [fig-115-114 (before)](figures/fig-115-114.webp), [fig-116-115 (after)](figures/fig-116-115.webp). Lookup: `keep-your-line-length-in-check`.
+**By mode:**
+- read: Keep body text at about 60–75 characters per line and near 16 px.
 
-<a id="baseline-not-center"></a>
+**Visuals:** [limit-line-length-4 (before)](figures/limit-line-length-4.webp), [limit-line-length-5 (after)](figures/limit-line-length-5.webp). Lookup: `limit-line-length`.
 
-## Baseline, not center
+<a id="align-mixed-sizes-on-baseline"></a>
+
+## Align mixed sizes on the baseline
 
 **When:** A title and smaller adjacent actions look vertically misaligned.
 
@@ -56,11 +63,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Use optical or center alignment when it suits icons or non-text controls; inspect the rendered result.
 
-**Visuals:** [fig-119-117 (before)](figures/fig-119-117.webp), [fig-120-119 (after)](figures/fig-120-119.webp). Lookup: `baseline-not-center`.
+**Visuals:** [align-mixed-sizes-on-baseline-2 (before)](figures/align-mixed-sizes-on-baseline-2.webp), [align-mixed-sizes-on-baseline-4 (after)](figures/align-mixed-sizes-on-baseline-4.webp). Lookup: `align-mixed-sizes-on-baseline`.
 
-<a id="line-height-is-proportional"></a>
+<a id="set-line-height-by-size-and-measure"></a>
 
-## Line-height is proportional
+## Set line-height by size and measure
 
 **When:** Body lines are hard to track, or a wrapped heading feels disconnected.
 
@@ -70,11 +77,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Test actual glyphs and wrapping; tight headline leading must not clip accents or overlap lines.
 
-**Visuals:** [fig-124-123 (comparison)](figures/fig-124-123.webp), [fig-125-124 (comparison)](figures/fig-125-124.webp). Lookup: `line-height-is-proportional`.
+**Visuals:** [set-line-height-by-size-and-measure-4 (comparison)](figures/set-line-height-by-size-and-measure-4.webp), [set-line-height-by-size-and-measure-5 (comparison)](figures/set-line-height-by-size-and-measure-5.webp). Lookup: `set-line-height-by-size-and-measure`.
 
-<a id="not-every-link-needs-a-color"></a>
+<a id="color-links-only-where-needed"></a>
 
-## Not every link needs a color
+## Color links only where needed
 
 **When:** Repeated colored links overwhelm cards or navigation.
 
@@ -84,11 +91,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Keep links identifiable without hover, preserve keyboard focus, and distinguish inline prose links from surrounding text.
 
-**Visuals:** [fig-126-126 (before)](figures/fig-126-126.webp), [fig-127-127 (after)](figures/fig-127-127.webp). Lookup: `not-every-link-needs-a-color`.
+**Visuals:** [color-links-only-where-needed-2 (before)](figures/color-links-only-where-needed-2.webp), [color-links-only-where-needed-3 (after)](figures/color-links-only-where-needed-3.webp). Lookup: `color-links-only-where-needed`.
 
-<a id="align-with-readability-in-mind"></a>
+<a id="align-for-reading"></a>
 
-## Align with readability in mind
+## Align for reading
 
 **When:** Long centered text or uneven numeric columns are hard to scan.
 
@@ -98,11 +105,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Account for RTL and locale-specific number formats. Justification needs careful hyphenation and language support.
 
-**Visuals:** [fig-129-131 (comparison)](figures/fig-129-131.webp), [fig-130-133 (comparison)](figures/fig-130-133.webp). Lookup: `align-with-readability-in-mind`.
+**Visuals:** [align-for-reading-3 (comparison)](figures/align-for-reading-3.webp), [align-for-reading-5 (comparison)](figures/align-for-reading-5.webp). Lookup: `align-for-reading`.
 
-<a id="use-letter-spacing-effectively"></a>
+<a id="adjust-tracking-by-size-and-case"></a>
 
-## Use letter-spacing effectively
+## Adjust tracking by size and case
 
 **When:** Headlines feel loose or all-caps labels feel crowded.
 
@@ -112,4 +119,4 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Tracking adjustments are font- and script-dependent; do not apply Latin uppercase habits universally.
 
-**Visuals:** [fig-133-138 (comparison)](figures/fig-133-138.webp), [fig-134-140 (comparison)](figures/fig-134-140.webp). Lookup: `use-letter-spacing-effectively`.
+**Visuals:** [adjust-tracking-by-size-and-case-3 (comparison)](figures/adjust-tracking-by-size-and-case-3.webp), [adjust-tracking-by-size-and-case-5 (comparison)](figures/adjust-tracking-by-size-and-case-5.webp). Lookup: `adjust-tracking-by-size-and-case`.

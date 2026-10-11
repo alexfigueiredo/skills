@@ -1,10 +1,10 @@
-# Starting from Scratch
+# New Screens
 
-Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its annotated figures. Figure paths are relative to this file.
+Read the matching rule below. `scripts/find_examples.py --rule <id>` returns its figures when it has them; open them when the rule concerns a visual quantity or you are unsure how far to take it. Figure paths are relative to this file.
 
-<a id="start-with-a-feature-not-a-layout"></a>
+<a id="design-the-feature-before-the-shell"></a>
 
-## Start with a feature, not a layout
+## Design the feature before the shell
 
 **When:** A new screen is stuck on navigation, page chrome or the app shell.
 
@@ -14,25 +14,25 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Reuse established navigation in an existing product; this advice targets an undecided new design.
 
-**Visuals:** [fig-009-002 (example)](figures/fig-009-002.webp), [fig-010-003 (example)](figures/fig-010-003.webp). Lookup: `start-with-a-feature-not-a-layout`.
+**Visuals:** [design-the-feature-before-the-shell-2 (example)](figures/design-the-feature-before-the-shell-2.webp), [design-the-feature-before-the-shell-3 (example)](figures/design-the-feature-before-the-shell-3.webp). Lookup: `design-the-feature-before-the-shell`.
 
-<a id="detail-comes-later"></a>
+<a id="settle-structure-before-detail"></a>
 
-## Detail comes later
+## Settle structure before detail
 
 **When:** Colors, fonts and shadows are slowing early layout decisions.
 
 **Change:** Explore structure in low fidelity or grayscale, then add detail once the hierarchy works.
 
-**Why / how:** Early on, typefaces, shadows and icons are noise. Work in low fidelity; paper and a thick marker make detail impossible, which is the point. When moving up in fidelity, stay in grayscale. Without color, spacing, contrast and size have to carry the hierarchy, and the result is a clearer interface that color later enhances instead of rescues. Sketches and wireframes are disposable: users cannot do anything with a static mockup, so do not over-invest in them.
+**Why / how:** Early on, typefaces, shadows and icons are noise. Work in low fidelity; paper and a thick marker make detail impossible, which is the point. When moving up in fidelity, stay in grayscale. Without color, spacing, contrast and size have to carry the hierarchy, and the result is an interface that is already clear before color is added. Sketches and wireframes are disposable: users cannot do anything with a static mockup, so do not over-invest in them.
 
 **Watch for:** Grayscale is a design exercise, not a demand to remove a product's established visual language.
 
-**Visuals:** [fig-013-005 (before)](figures/fig-013-005.webp), [fig-013-006 (after)](figures/fig-013-006.webp). Lookup: `detail-comes-later`.
+**Visuals:** [settle-structure-before-detail-2 (before)](figures/settle-structure-before-detail-2.webp), [settle-structure-before-detail-3 (after)](figures/settle-structure-before-detail-3.webp). Lookup: `settle-structure-before-detail`.
 
-<a id="dont-design-too-much"></a>
+<a id="design-the-current-slice"></a>
 
-## Don’t design too much
+## Design the current slice
 
 **When:** Mockups imply features or edge cases that are outside the current delivery scope.
 
@@ -42,32 +42,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Keep required functionality and known constraints; simplify only genuinely optional scope.
 
-**Visuals:** [fig-018-010 (before)](figures/fig-018-010.webp), [fig-019-011 (after)](figures/fig-019-011.webp). Lookup: `dont-design-too-much`.
+**Visuals:** [design-the-current-slice-4 (before)](figures/design-the-current-slice-4.webp), [design-the-current-slice-5 (after)](figures/design-the-current-slice-5.webp). Lookup: `design-the-current-slice`.
 
-<a id="choose-a-personality"></a>
+<a id="constrain-choices-to-scales"></a>
 
-## Choose a personality
-
-**When:** The interface feels generic or its typography, colors, corners and copy disagree.
-
-**Change:** Choose a coherent visual and verbal personality suited to the audience.
-
-**Why / how:** Personality is set by a few concrete levers.
-
-- Typeface: serif reads elegant or classic, rounded sans reads playful, neutral sans reads plain and lets other elements carry the personality.
-- Color: blue is safe and familiar, gold reads expensive, pink reads fun. Color psychology helps explain why a choice feels right; it is not a selection method.
-- Border radius: none reads formal, small reads neutral, large reads playful. Pick one and keep it; mixing square and rounded corners looks worse than either.
-- Language: impersonal copy reads official, casual copy reads friendly. Words matter as much as the visuals.
-
-When unsure, match the register of sites your audience already uses, without borrowing from direct competitors.
-
-**Watch for:** Preserve an existing brand; color associations and example fonts are possibilities, not universal meanings.
-
-**Visuals:** [fig-021-013 (example)](figures/fig-021-013.webp), [fig-021-014 (example)](figures/fig-021-014.webp), [fig-022-015 (example)](figures/fig-022-015.webp). Lookup: `choose-a-personality`.
-
-<a id="limit-your-choices"></a>
-
-## Limit your choices
+## Constrain choices to scales
 
 **When:** Every component introduces another slightly different size, shade or shadow.
 
@@ -77,4 +56,4 @@ When unsure, match the register of sites your audience already uses, without bor
 
 **Watch for:** Use the project's existing tokens before proposing new scales.
 
-**Visuals:** [fig-030-028 (comparison)](figures/fig-030-028.webp), [fig-031-029 (comparison)](figures/fig-031-029.webp). Lookup: `limit-your-choices`.
+**Visuals:** [constrain-choices-to-scales-5 (comparison)](figures/constrain-choices-to-scales-5.webp), [constrain-choices-to-scales-6 (comparison)](figures/constrain-choices-to-scales-6.webp). Lookup: `constrain-choices-to-scales`.

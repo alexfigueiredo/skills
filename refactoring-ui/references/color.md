@@ -1,10 +1,10 @@
-# Working with Color
+# Color
 
-Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its annotated figures. Figure paths are relative to this file.
+Read the matching rule below. `scripts/find_examples.py --rule <id>` returns its figures when it has them; open them when the rule concerns a visual quantity or you are unsure how far to take it. Figure paths are relative to this file.
 
-<a id="ditch-hex-for-hsl"></a>
+<a id="use-a-relational-color-model"></a>
 
-## Ditch hex for HSL
+## Use a relational color model
 
 **When:** Related colors are difficult to reason about when editing raw color values.
 
@@ -14,11 +14,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** HSL explains the examples; it is not mandatory. Preserve an existing OKLCH or other color workflow.
 
-**Visuals:** [fig-138-141 (diagram)](figures/fig-138-141.webp), [fig-138-142 (diagram)](figures/fig-138-142.webp). Lookup: `ditch-hex-for-hsl`.
+**Visuals:** [use-a-relational-color-model-1 (diagram)](figures/use-a-relational-color-model-1.webp), [use-a-relational-color-model-2 (diagram)](figures/use-a-relational-color-model-2.webp). Lookup: `use-a-relational-color-model`.
 
-<a id="you-need-more-colors-than-you-think"></a>
+<a id="plan-full-color-ranges"></a>
 
-## You need more colors than you think
+## Plan full color ranges
 
 **When:** A small palette cannot support readable text, surfaces and semantic states.
 
@@ -28,11 +28,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Do not create unused palette families or overwhelm the interface with saturated colors.
 
-**Visuals:** [fig-142-149 (before)](figures/fig-142-149.webp), [fig-143-150 (after)](figures/fig-143-150.webp). Lookup: `you-need-more-colors-than-you-think`.
+**Visuals:** [plan-full-color-ranges-2 (before)](figures/plan-full-color-ranges-2.webp), [plan-full-color-ranges-3 (after)](figures/plan-full-color-ranges-3.webp). Lookup: `plan-full-color-ranges`.
 
-<a id="define-your-shades-up-front"></a>
+<a id="define-shade-scales-up-front"></a>
 
-## Define your shades up front
+## Define shade scales up front
 
 **When:** Components accumulate slightly different ad hoc lightened and darkened colors.
 
@@ -42,11 +42,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Judge shades in real components and both supported themes; the displayed base shade is not a contrast guarantee.
 
-**Visuals:** [fig-149-160 (example)](figures/fig-149-160.webp), [fig-150-161 (diagram)](figures/fig-150-161.webp), [fig-150-162 (diagram)](figures/fig-150-162.webp), [fig-150-163 (diagram)](figures/fig-150-163.webp). Lookup: `define-your-shades-up-front`.
+**Visuals:** [define-shade-scales-up-front-3 (example)](figures/define-shade-scales-up-front-3.webp), [define-shade-scales-up-front-4 (diagram)](figures/define-shade-scales-up-front-4.webp), [define-shade-scales-up-front-5 (diagram)](figures/define-shade-scales-up-front-5.webp), [define-shade-scales-up-front-6 (diagram)](figures/define-shade-scales-up-front-6.webp). Lookup: `define-shade-scales-up-front`.
 
-<a id="dont-let-lightness-kill-your-saturation"></a>
+<a id="keep-saturation-at-the-extremes"></a>
 
-## Don’t let lightness kill your saturation
+## Keep saturation at the light and dark ends
 
 **When:** Light and dark palette shades look washed out or muddy.
 
@@ -56,11 +56,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** The HSL brightness approximation shown in the examples is not WCAG relative luminance. HSL hue offsets do not transfer directly to OKLCH.
 
-**Visuals:** [fig-156-175 (comparison)](figures/fig-156-175.webp). Lookup: `dont-let-lightness-kill-your-saturation`.
+**Visuals:** [keep-saturation-at-the-extremes-11 (comparison)](figures/keep-saturation-at-the-extremes-11.webp). Lookup: `keep-saturation-at-the-extremes`.
 
-<a id="greys-dont-have-to-be-grey"></a>
+<a id="tint-neutrals"></a>
 
-## Greys don’t have to be grey
+## Tint neutrals
 
 **When:** Neutral surfaces feel disconnected from the intended warm or cool personality.
 
@@ -70,11 +70,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Neutral greys and black are valid choices; preserve the existing brand and measure text contrast.
 
-**Visuals:** [fig-159-179 (comparison)](figures/fig-159-179.webp), [fig-159-180 (example)](figures/fig-159-180.webp). Lookup: `greys-dont-have-to-be-grey`.
+**Visuals:** [tint-neutrals-3 (comparison)](figures/tint-neutrals-3.webp), [tint-neutrals-4 (example)](figures/tint-neutrals-4.webp). Lookup: `tint-neutrals`.
 
-<a id="accessible-doesnt-have-to-mean-ugly"></a>
+<a id="use-dark-text-on-light-tints"></a>
 
-## Accessible doesn’t have to mean ugly
+## Use dark text on light tints
 
 **When:** Readable status colors become too visually heavy, or colored text loses its character.
 
@@ -84,11 +84,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Normal text needs 4.5:1; large text needs 3:1 at 18pt/24px regular or 14pt/about 18.67px bold. Do not round a failing ratio up.
 
-**Visuals:** [fig-163-182 (before)](figures/fig-163-182.webp), [fig-163-183 (example)](figures/fig-163-183.webp), [fig-164-184 (after)](figures/fig-164-184.webp). Lookup: `accessible-doesnt-have-to-mean-ugly`.
+**Visuals:** [use-dark-text-on-light-tints-2 (before)](figures/use-dark-text-on-light-tints-2.webp), [use-dark-text-on-light-tints-3 (example)](figures/use-dark-text-on-light-tints-3.webp), [use-dark-text-on-light-tints-4 (after)](figures/use-dark-text-on-light-tints-4.webp). Lookup: `use-dark-text-on-light-tints`.
 
 <a id="dont-rely-on-color-alone"></a>
 
-## Don’t rely on color alone
+## Don't rely on color alone
 
 **When:** Trends, statuses or chart categories are distinguishable only by hue.
 
@@ -98,4 +98,16 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Lightness differences help but do not alone identify every chart series; preserve labels and values.
 
-**Visuals:** [fig-166-187 (before)](figures/fig-166-187.webp), [fig-167-188 (after)](figures/fig-167-188.webp). Lookup: `dont-rely-on-color-alone`.
+**Visuals:** [dont-rely-on-color-alone-1 (before)](figures/dont-rely-on-color-alone-1.webp), [dont-rely-on-color-alone-2 (after)](figures/dont-rely-on-color-alone-2.webp). Lookup: `dont-rely-on-color-alone`.
+
+<a id="design-dark-themes-separately"></a>
+
+## Design dark themes separately
+
+**When:** A dark theme was made by inverting the light palette, and surfaces blur together, text glares or brand colors vibrate.
+
+**Change:** Make higher layers lighter instead of relying on shadows, measure every contrast pair again, and tune text and brand colors for the dark surfaces.
+
+**Why / how:** Shadows barely show on dark backgrounds, so elevation comes from surface tone: each raised layer (card, menu, dialog) is one step lighter than the layer below (`layer-flat-designs-with-tone`). Pure white body text on near-black has more contrast than reading needs; an off-white step of the neutral ramp is easier to read. Saturated colors that work on white can vibrate on dark surfaces; use a lighter, less saturated step of the same hue. Light text on dark looks heavier and thin weights can break up, so check line-height, tracking and weight in the rendered dark theme.
+
+**Watch for:** Measure text, icon and focus colors in both themes; a pair that passes in light mode can fail in dark mode. Keep the meaning of status colors the same in both themes. Choose dark or light as the default from where and when the product is used.

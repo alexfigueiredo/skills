@@ -1,10 +1,10 @@
-# Hierarchy is Everything
+# Hierarchy
 
-Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its annotated figures. Figure paths are relative to this file.
+Read the matching rule below. `scripts/find_examples.py --rule <id>` returns its figures when it has them; open them when the rule concerns a visual quantity or you are unsure how far to take it. Figure paths are relative to this file.
 
-<a id="not-all-elements-are-equal"></a>
+<a id="rank-content-by-importance"></a>
 
-## Not all elements are equal
+## Rank content by importance
 
 **When:** A crowded dashboard gives all information and actions equal emphasis.
 
@@ -14,11 +14,15 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Density can be intentional; preserve information needed for the user's task.
 
-**Visuals:** [fig-036-030 (before)](figures/fig-036-030.webp), [fig-037-031 (after)](figures/fig-037-031.webp). Lookup: `not-all-elements-are-equal`.
+**By mode:**
+- convert: Rank the sections by the page's job and vary their size and treatment instead of repeating identical cards.
+- browse: Items are peers by design; rank the controls and metadata around them.
 
-<a id="size-isnt-everything"></a>
+**Visuals:** [rank-content-by-importance-1 (before)](figures/rank-content-by-importance-1.webp), [rank-content-by-importance-2 (after)](figures/rank-content-by-importance-2.webp). Lookup: `rank-content-by-importance`.
 
-## Size isn’t everything
+<a id="emphasize-with-weight-and-color"></a>
+
+## Emphasize with weight and color, not only size
 
 **When:** The main text is oversized while supporting details are too small.
 
@@ -28,11 +32,14 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Secondary text still needs readable contrast and size; example pixel values are not mandates.
 
-**Visuals:** [fig-038-032 (before)](figures/fig-038-032.webp), [fig-039-033 (example)](figures/fig-039-033.webp), [fig-039-034 (example)](figures/fig-039-034.webp), [fig-040-035 (after)](figures/fig-040-035.webp). Lookup: `size-isnt-everything`.
+**By mode:**
+- convert, experience: A display typeface keeps its own weight; the two-weight limit applies to interface text.
 
-<a id="dont-use-grey-text-on-colored-backgrounds"></a>
+**Visuals:** [emphasize-with-weight-and-color-1 (before)](figures/emphasize-with-weight-and-color-1.webp), [emphasize-with-weight-and-color-2 (example)](figures/emphasize-with-weight-and-color-2.webp), [emphasize-with-weight-and-color-3 (example)](figures/emphasize-with-weight-and-color-3.webp), [emphasize-with-weight-and-color-4 (after)](figures/emphasize-with-weight-and-color-4.webp). Lookup: `emphasize-with-weight-and-color`.
 
-## Don’t use grey text on colored backgrounds
+<a id="tint-secondary-text-on-color"></a>
+
+## Tint secondary text on colored backgrounds
 
 **When:** Secondary text on a colored panel looks grey, washed out or disabled.
 
@@ -42,25 +49,28 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Measure contrast; transparency is acceptable when its composited result is deliberate and verified.
 
-**Visuals:** [fig-042-036 (before)](figures/fig-042-036.webp), [fig-044-040 (after)](figures/fig-044-040.webp). Lookup: `dont-use-grey-text-on-colored-backgrounds`.
+**Visuals:** [tint-secondary-text-on-color-1 (before)](figures/tint-secondary-text-on-color-1.webp), [tint-secondary-text-on-color-5 (after)](figures/tint-secondary-text-on-color-5.webp). Lookup: `tint-secondary-text-on-color`.
 
-<a id="emphasize-by-de-emphasizing"></a>
+<a id="de-emphasize-competitors"></a>
 
-## Emphasize by de-emphasizing
+## De-emphasize competing elements
 
 **When:** The active navigation or main content cannot stand out because neighboring elements compete.
 
 **Change:** Reduce the emphasis of competitors, such as inactive links or a sidebar panel.
 
-**Why / how:** When the main element will not stand out and there is nothing left to add to it, remove emphasis from its competitors. An active nav item pops when the inactive ones get a softer color. A sidebar stops competing with the content when it loses its background and sits on the page background.
+**Why / how:** When the main element will not stand out and there is nothing left to add to it, remove emphasis from its competitors. An active nav item stands out when the inactive ones get a softer color. A sidebar stops competing with the content when it loses its background and sits on the page background.
 
 **Watch for:** Inactive navigation is still available navigation, not a disabled control; maintain contrast and a non-color active cue.
 
-**Visuals:** [fig-046-041 (before)](figures/fig-046-041.webp), [fig-046-042 (after)](figures/fig-046-042.webp). Lookup: `emphasize-by-de-emphasizing`.
+**By mode:**
+- convert, experience: Quiet the neighbors; do not shrink or dim the headline or brand art to balance them.
 
-<a id="labels-are-a-last-resort"></a>
+**Visuals:** [de-emphasize-competitors-1 (before)](figures/de-emphasize-competitors-1.webp), [de-emphasize-competitors-2 (after)](figures/de-emphasize-competitors-2.webp). Lookup: `de-emphasize-competitors`.
 
-## Labels are a last resort
+<a id="let-values-identify-themselves"></a>
+
+## Let values identify themselves
 
 **When:** Displayed data is buried in repetitive label-value pairs.
 
@@ -70,7 +80,19 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** This rule concerns displayed data, not form labels or accessible names. Keep labels when meaning is ambiguous or users scan by label.
 
-**Visuals:** [fig-048-044 (before)](figures/fig-048-044.webp), [fig-049-045 (after)](figures/fig-049-045.webp). Lookup: `labels-are-a-last-resort`.
+**Visuals:** [let-values-identify-themselves-1 (before)](figures/let-values-identify-themselves-1.webp), [let-values-identify-themselves-2 (after)](figures/let-values-identify-themselves-2.webp). Lookup: `let-values-identify-themselves`.
+
+<a id="structure-matches-content"></a>
+
+## Structure matches content
+
+**When:** Numbered markers, small uppercase labels above headings, or dividers appear where the content has no order, category or boundary.
+
+**Change:** Remove them; keep each one only where it states something true that the heading and navigation do not.
+
+**Why / how:** Readers treat visual structure as information. Numbers say the items form a sequence, a label above a heading says the section belongs to a category, and a divider says two parts are separate. A "Team Builder" label above a page titled "Build Lab" repeats the navigation. "01" to "04" on four independent links implies an order that does not exist. Number steps that happen in order, label sections with a category the reader needs, and separate parts that are distinct.
+
+**Watch for:** Ordered steps, real categories and real boundaries still need their markers.
 
 <a id="separate-visual-hierarchy-from-document-hierarchy"></a>
 
@@ -84,7 +106,10 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Do not change heading levels or remove accessible structure merely to make text smaller.
 
-**Visuals:** [fig-054-050 (before)](figures/fig-054-050.webp), [fig-055-051 (after)](figures/fig-055-051.webp). Lookup: `separate-visual-hierarchy-from-document-hierarchy`.
+**By mode:**
+- convert, experience: The display headline is content; keep it large. Style the section titles below it modestly.
+
+**Visuals:** [separate-visual-hierarchy-from-document-hierarchy-1 (before)](figures/separate-visual-hierarchy-from-document-hierarchy-1.webp), [separate-visual-hierarchy-from-document-hierarchy-2 (after)](figures/separate-visual-hierarchy-from-document-hierarchy-2.webp). Lookup: `separate-visual-hierarchy-from-document-hierarchy`.
 
 <a id="balance-weight-and-contrast"></a>
 
@@ -98,11 +123,11 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** Required control boundaries and meaningful icons need adequate contrast; decorative examples are not universal tokens.
 
-**Visuals:** [fig-057-053 (before)](figures/fig-057-053.webp), [fig-057-054 (after)](figures/fig-057-054.webp). Lookup: `balance-weight-and-contrast`.
+**Visuals:** [balance-weight-and-contrast-2 (before)](figures/balance-weight-and-contrast-2.webp), [balance-weight-and-contrast-3 (after)](figures/balance-weight-and-contrast-3.webp). Lookup: `balance-weight-and-contrast`.
 
-<a id="semantics-are-secondary"></a>
+<a id="style-actions-by-priority"></a>
 
-## Semantics are secondary
+## Style actions by priority
 
 **When:** Every action is a loud colored button, including rare destructive actions.
 
@@ -112,4 +137,7 @@ Read the matching rule below; use `scripts/find_examples.py --rule <id>` for its
 
 **Watch for:** The title refers to visual button priority, not HTML semantics. Keep destructive labels and required confirmations clear.
 
-**Visuals:** [fig-060-057 (before)](figures/fig-060-057.webp), [fig-061-058 (after)](figures/fig-061-058.webp). Lookup: `semantics-are-secondary`.
+**By mode:**
+- convert: The page's primary action keeps the brand color at full strength; make the secondary actions quieter instead.
+
+**Visuals:** [style-actions-by-priority-1 (before)](figures/style-actions-by-priority-1.webp), [style-actions-by-priority-2 (after)](figures/style-actions-by-priority-2.webp). Lookup: `style-actions-by-priority`.

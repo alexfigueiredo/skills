@@ -1,6 +1,6 @@
 interface:
   display_name: "refactoring-UI"
-  short_description: "Practical UI rules with searchable visual examples"
+  short_description: "Page modes, visual direction and UI rules with searchable examples"
   default_prompt: "Use $refactoring-ui to improve this interface using relevant principles and visual examples."
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

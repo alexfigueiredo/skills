@@ -6,4 +6,4 @@ Agent skills I use with Claude Code and Codex. Each skill lives in its own direc
 
 | Skill | Invocation | Notes |
 | --- | --- | --- |
-| `refactoring-ui` | `/refactoring-ui` (Claude Code), `$refactoring-ui` (Codex) | UI design and critique workflow with 50 rules, 283 annotated figures, and an offline example lookup. |
+| `refactoring-ui` | `/refactoring-ui` (Claude Code), `$refactoring-ui` (Codex) | UI design, visual direction and critique workflow: page modes, 63 rules, 283 annotated figures and an offline example lookup. |
